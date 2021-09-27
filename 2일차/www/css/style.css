@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+#wrap
+{
+    width: 900px;
+    /*가운데로 맞추는데 가장 많이 사용*/
+    margin: 0 auto;    
+    text-align: center;
+    color: white;
+}
+nav
+{
+    width: 900px;
+    height: 100px;
+    line-height: 100px;
+    background-color: gray;
+}
+aside
+{
+    width: 200px;
+    height: 600px;
+    line-height: 600px;
+    background-color: lightgreen;
+    float: left;
+}
+section
+{
+    width: 700px;
+    height: 600px;
+    background-color: indianred;
+    line-height: 600px;
+    float: right;
+}
+#main_visual
+{
+    width: 700px;
+    height: 350px;
+    background-color: darkblue;
+    line-height: 350px;
+}
+.main_con
+{
+    width: 700px;
+    height: 250px;
+    line-height: 250px;
+    background-color: lightblue;
+}
+footer
+{
+    width: 900px;
+    height: 150px;
+    line-height: 150px;
+    background-color: darkslategray;
+    clear: both;
+}
