@@ -1,8 +1,8 @@
 # front_study_novice
 
-프론트 기초 수업 모음
+프론트 기초 수업 모음  
 
-2021-09-27
+final update : 2021-10-04  
 
 
 
