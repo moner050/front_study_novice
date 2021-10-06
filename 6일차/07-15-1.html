@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 스타일</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+        /* font-family: 'Montserrat', sans-serif */
+        *{margin: 0; padding: 0;}
+        div
+        {
+            text-align: center;
+            line-height: 170px;
+        }
+        h2
+        {
+            color: black;
+            font-size: 100px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+        }
+        #text-box1 h2
+        {
+            text-shadow: 5px 5px 20px #8e3;
+        }
+        #text-box2 h2
+        {
+            text-shadow: 5px 10px 13px rgba(211, 0, 136, 0.5),
+                        -5px 10px 13px rgba(211, 0, 136, 0.5);
+        }
+        #text-box3 h2
+        {
+            text-shadow: 10px 10px 20px rgba(211, 0, 136, 0.5),
+                        -5px 10px 13px rgba(0, 177, 211, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="text-box1">
+    <h2>WEB PUBLISHER</h2>
+    </div>
+    
+    <div id="text-box2">
+        <h2>FULL STACK</h2>
+    </div>
+    
+    <div id="text-box3">
+    <h2>WEB MASTER</h2>
+    </div>
+</body>
+</html>
