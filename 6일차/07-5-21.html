@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 스타일 지정</title>
+    <style>
+        form input[type="number"]
+        {
+            width: 200px;
+            height: 42px;
+            font-size: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        form input:in-range
+        {
+            color: tomato;
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="num">근무경력</label><br>
+        <input type="number" name="num" id="num" min="1" max="10" value="3">
+    </form>
+</body>
+</html>
