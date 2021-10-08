@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스</title>
+    <style>
+        div
+        {
+            float: left;
+            margin: 20px;
+        }
+        .box1
+        {
+            width: 300px;
+            height: 10px;
+            padding: 30px;
+            border: 10px solid red;
+            /* box-sizing: content-box; */
+        }
+          /* padding과 border값이 크면 지정해둔 높이와 넓이값을 잡아먹는다.*/
+        .box2
+        {
+            width: 300px;
+            height: 10px;
+            padding: 30px;
+            border: 10px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box-sizing = "content-box"</div>
+    <div class="box2">box-sizing = "border-box"</div>
+</body>
+</html>
