@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 스타일 지정</title>
+    <style> 
+        [target] {
+            background-color: orangered;
+            color: #fff;
+        }
+        [target=_blank] {
+            background-color: hotpink;
+            color:white;
+        }
+
+
+        /* 띄어쓰기 잘 할것 */
+        [title~="웹(web)"] {  
+            background-color: teal;
+            color:white
+        }
+        a[href^='https']{
+            background-color: rgb(68, 0, 255);
+            color: white;
+        }
+        a[href$='com'] {
+            background-color: violet;
+            color: white;
+            text-decoration: overline;
+        }
+        a[href*='mega']{
+            background-color: yellowgreen;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>프론트 엔드는 많은 앞단에 이루어지는
+            <a href="#"><i>웹사이트</i></a>를 처리한다.
+        </p>
+        <p><a href="#"  target="_self" title="웹 기획">웹 기획</a></p>
+        <p><a href="#"  target="_blank" title="웹 스토리보드">웹 스토리보드</a></p>
+        <p><a href="#"  title="웹 스토리텔링 ">웹 스토리텔링</a></p>
+        <div>
+            <h1 class="section1" title="선택자 스타일 지정"> 선택자 스타일 지정</h1>
+            <p class="text-web" title="웹 디자이너">웹 디자이너</p>
+        </div>
+        <p><a href="#" target="_self" title="웹(web) 기획">웹 기획</a></p>
+        <p><a href="#" target="_blank" title="웹 개발자 스토리보드">웹 스토리보드</a></p>
+        <p><a href="#"  title="웹(web) 스토리텔링">웹(web)스토리텔링</a></p>
+
+        <p><a href="https://www.naver.com" title="웹(web) 기획">웹 기획</a></p>
+        <p><a href="http://www.megastudy-computer.com" title="웹(web) 스토리보드">웹(web)스토리보드</a></p>
+        <p><a href="http://www.megastudy-computer.com" title="웹(web) 스토리텔링">웹(web)스토리텔링</a></p>
+    </div>
+</body>
+</html>

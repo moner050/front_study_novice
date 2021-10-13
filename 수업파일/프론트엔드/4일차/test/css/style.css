@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+ * {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+body{
+  background-color: #222;
+  height: 100%;
+}
+#container{
+  width: 900px;
+  height: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+
+aside{
+  float: left;
+  width: 300px;
+  padding: 20px 50px;
+  height: 950px;
+  background-color: #fff;
+
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  background: lightcoral;
+  color: white;
+}
+
+li,p{
+  line-height: 2.0;
+  font-size: 0.9em;
+}
+#detail{
+  position: relative;
+  top: 80px;
+}
+#sns{
+  position: relative;
+  top: 100px;
+}
+
+main{
+  float: right;
+  width: 600px;
+  height: 100%;
+  padding: 20px;
+}
+
+main>section{
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
+  border-bottom: 1px dotted #222;;
+}
+
+section>p, section>table {
+  margin-left: 50px;
+}
+
+aside h1{
+  font-size: 1.8em;
+  font-variant: small-caps;
+}
+
+aside h2{
+  font-size: 1.2em;
+}
+
+#namecard p {
+  font-size: 0.9em;
+  color:#222;
+}
+
+.subtitle{
+  font-size: 1.5em;
+  line-height: 0.9em;
+}
+
+.subtitle::before{
+  content: "";
+  display: block;
+  background: url("../images/sunglasses.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+section>p{
+  font-size: 0.9em;
+}
+table{
+  width: 80%;
+  border: 1px solid #222;
+  border-collapse: collapse;
+}
+thead{
+  background: salmon;
+}
+
+th, td{
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 0.8em;
+}
+a{
+  color: #222;
+  text-decoration: none;
+}
+
+#sns>ul{
+  padding-left: 0;
+
+}
+#sns>ul>li{
+  display: inline-block;
+  width: 80px;
+}

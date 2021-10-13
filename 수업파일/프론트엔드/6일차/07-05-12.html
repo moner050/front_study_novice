@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 스타일 지정</title>
+    <style> 
+        a:link {
+            color: darkcyan;
+            text-decoration: none;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: darkorchid;
+        }
+        a:focus {
+            text-decoration: underline;
+            color:orange;
+            outline: 0;
+        }
+        a:active {
+            background-color: rgb(0, 255, 34);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <!-- 주소를 다르게 하면 클릭시 하나씩 색상이 변경 -->
+        <p><a href="#">웹 기획</a></p>
+        <p><a href="#">웹 스토리보드</a></p>
+        <p><a href="#">웹 스토리텔링</a></p>
+        <p><a href="#">웹 디자인</a></p>
+        <p><a href="#">웹 포트폴리오</a></p>
+    </div>
+</body>
+</html>

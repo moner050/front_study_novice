@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --border-style: 1px solid black;
+    }
+    * {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .allfood {
+      width: 900px;
+      height: 150px;
+      text-align: center;
+      border: var(--border-style);
+      margin-bottom: 30px;
+    }
+    .food {
+      width: 260px;
+      height: 250px;
+      border: var(--border-style);
+      text-align: center;
+    }
+    img {
+      width: 75px;
+      height: 60px;
+    }
+    h2 {
+      font-size: 0.8em;
+    }
+    .food__choice {
+      width: 900px;
+    }
+    .food-menu {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <body>
+    <div class="food__choice">
+      <div class="allfood">
+        <h2>해당하는 음식을 출력하세요</h2>
+        <img src="image/1.jpg" alt="1.jpg" id="kor1" />
+        <img src="image/2.jpg" alt="2.jpg" id="kor2" />
+        <img src="image/3.jpg" alt="3.jpg" id="kor3" />
+
+        <img src="image/4.jpg" alt="라면" id="f1" />
+        <img src="image/5.jpg" alt="라면" id="f2" />
+        <img src="image/6.jpg" alt="라면" id="f3" />
+
+        <img src="image/7.jpg" alt="짜장" id="ch1" />
+        <img src="image/8.jpg" alt="탕수육" id="ch2" />
+        <img src="image/9.jpg" alt="짬뽕" id="ch3" />
+      </div>
+      <div class="food-menu">
+        <div class="food">
+          <h2>한식</h2>
+        </div>
+        <div class="food">
+          <h2>분식</h2>
+        </div>
+        <div class="food">
+          <h2>중식</h2>
+        </div>
+      </div>
+    </div>
+    <script>
+      //나중에
+    </script>
+  </body>
+</html>

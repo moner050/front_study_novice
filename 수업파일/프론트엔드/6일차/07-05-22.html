@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 스타일 지정</title>
+    <style> 
+       form input[type='email']{
+           width: 500px;
+           height: 40px;
+           font-size: 20px;
+           text-align: center;
+           border: 1px solid #ccc;
+           background-color: wheat;
+       }
+       form input:invalid{
+           color:crimson;
+           background-color: #ccc;
+           border: 1px solid rgb(177, 177, 177);
+       }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="mail">E-mail</label><br>
+        <input type="email" name="mail" id="mail">
+        <br><br>
+        <label for="mail2">E-mail2</label><br>
+        <input type="email" name="mail2" id="mail2">
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
