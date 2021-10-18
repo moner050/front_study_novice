@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        ul{ text-align: center;   }
+        li{ list-style: none; }
+        a{ text-decoration: none;  }
+
+
+        header{
+            position: absolute;
+            top:0;
+            width: 100%;
+        }
+
+        .logo{
+            display: inline-block;
+            width: 100%;
+            line-height: 60px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .nav-bar{
+            background: -webkit-linear-gradient(-45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            height: 90px;
+            padding: 10px;
+        }
+
+        .nav-item{
+            font-size: 1.5em;
+            display: inline-block;
+            text-align: left;
+            vertical-align: bottom;
+            text-shadow: 2px 1px 7px;
+            text-decoration: underline;
+            line-height: 90px;
+            margin: 0px 12px 0 12px ;
+            transition: all 1s;
+        }
+        
+        .nav-item:hover{
+            text-shadow: 3px 2px 15px;
+            letter-spacing: 2px;
+        }
+        
+        #content-wrap{
+            width: 100%;
+            margin-top: 180px;
+            text-align: center;
+            font-size:0;
+        }
+        
+        .carousel{
+            /* carousel=캐러셀 */
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 150px;
+        }
+        .card{
+            background-color: #ccc;
+            display: inline-block;
+            font-size: 16px;
+            width:48%;
+            padding: 8px;
+            border-width: 0px 2px 2px 0px;
+            border-style: solid;
+            border-color: #333; 
+            border-radius: 10px;
+            margin: 10px;
+        }
+      
+        
+        .card>.card-header{
+            padding: 10px;
+            text-shadow: 2px 1px 3px;
+            border-bottom: 1px dashed black;
+        }
+        .card>.card-body{
+            padding: 5px;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0; right: 0;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">
+                <h1>this is logo.</h1>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-items">
+                    <li class="nav-item"><a>this is first </a></li>
+                    <li class="nav-item"><a>this is two </a></li>
+                    <li class="nav-item"><a>this is three </a></li>
+                </ul>
+            </nav>
+        </header> <!-- end of header -->
+
+        <div id="content-wrap">
+            <div class="carousel">
+                this is carousel center영역
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    this is card header 1
+                </div>  
+                <div class="card-body">
+                    this is card body 1
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    this is card header 2
+                </div>  
+                <div class="card-body">
+                    this is card body 2
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    this is card header 3
+                </div>  
+                <div class="card-body">
+                    this is card body 3
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    this is card header 4
+                </div>  
+                <div class="card-body">
+                    this is card body 4
+                </div>
+            </div>
+        </div>
+
+        <!-- end of content-wrap -->
+        <footer>
+            this is footer.
+        </footer>
+    </div>
+    <!-- end of wrap -->
+<script>
+</script>   
+</body>
+</html>

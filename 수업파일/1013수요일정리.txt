@@ -1,5 +1,35 @@
 html 수업 7시시작
 \\192.168.10.27
+
+08회차 10월11일 월요일
+09회차 10월13일 수요일
+
+https://drive.google.com/drive/folders/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7
+https://drive.google.com/drive/folders/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7
+
+https://drive.google.com/drive/folders/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7?usp=sharing
+https://~/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7?usp=sharing
+
+
+ display속성
+ video태그/audio태그
+ 특수문자태그 
+ float속성
+
+https://www.lipsum.com/
+
+
+div/span 
+data/date
+text/test
+content/context
+
+// 슬래시
+\\ 역슬래시
+\\192.168.10.27
+
+
+/////////////////////////////////////////////////////////////////////////////////
 table태그이용, div태그이용되요
 
 플젝 
