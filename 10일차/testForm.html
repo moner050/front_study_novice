@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testForm</title>
+</head>
+<style>
+    *
+    {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: comic sans MS, consolas, 돋음체;
+        margin-left: 10px;
+        /* margin: 0 auto; */
+    }
+    .input_group
+    {
+        height: 50px;
+        border-bottom: 1px dotted #AACC;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+</style>
+
+    <script>
+        // 10월 20일 수요일 진행 함수생성, 변수, 연산, 제어, 반복, 배열
+        function star()
+        {
+
+        }
+    </script>
+
+<body>
+    <div style="width: 950px;">
+        <form action="" name="myform">
+            <fieldset>
+                <legend>testForm입력화면</legend>
+                <div class="input_group">
+                    <label>아이디 : </label>
+                    <input type="text" maxlength="6" size="10">
+                    <input type="button" value="중복체크">
+                    <button onclick="">중복체크</button>
+                </div>
+
+                <div class="input_group">
+                    <label>이름 : </label>
+                    <input type="text" name="user_name" id="user_name" placeholder="이름 입력">
+                </div>
+
+                <div class="input_group">
+                    <label>비번 : </label>
+                    <input type="password" name="user_password" id="user_password" placeholder="비번 입력(6~12글자)" maxlength="12" minlength="6">
+                </div>
+
+                <div class="input_group">
+                    <label>성별 : </label>
+                    <label><input type="radio" name="gender" id="gender" value="male" checked="checked">남자</label>
+                    <label><input type="radio" name="gender" id="gender" value="female">여자</label>
+                </div>
+                <div class="input_group">
+                    <label>취미 :</label> <!-- 축구, 디자인, 영화보기, 여행-->
+                    <label><input type="checkbox" name="hobby" id="hobby" value="soccer">축구</label>
+                    <label><input type="checkbox" name="hobby" id="hobby" value="design">디자인</label>
+                    <label><input type="checkbox" name="hobby" id="hobby" value="movie">영화보기</label>
+                    <label><input type="checkbox" name="hobby" id="hobby" value="travel">여행</label>
+                    <label><input type="checkbox" name="hobby" id="hobby" value="other" checked="checked">기타</label>
+                </div>
+
+                <div class="input_group">
+                    <label>직업 : </label>
+                    <select name="job" id="job">
+                        <option value="">------선택하세요------</option>
+                        <option value="coder">coder</option>
+                        <option value="pub">퍼블리셔</option>
+                        <option value="dev">웹개발자</option>
+                    </select>
+                </div>
+            <!-- 메일입력, textarea, input type="file", button/reset-->
+                <div class="input_group">
+                    <label>메일1 :</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="test1@mega.com">
+                </div>
+                <div class="input_group">
+                    <label>메일2 :</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="test2@mega.com">
+                </div>
+
+                <div class="input_group">
+                    <label>기본주소 : </label>
+                    <input type="text" readonly><button onclick="">우편번호</button><br>
+                    <label>상세주소 : </label>
+                    <input type="text">
+                </div>
+
+                <div class="input_group"></div>
+                <div class="input_group" style="margin-bottom: 70px;">
+                    <label>내용 : </label>
+                    <label><textarea name="content" id="content" cols="30" rows="3" style="vertical-align: middle;">
+                    
+                    </textarea></label>
+                </div>
+                <div class="input_group"></div>
+
+                
+                <div class="input_group">
+                    <label>파일 :</label>
+                    <label><input type="file" id="file" name="file"></label>
+                </div>
+
+                <div class="input_group">
+                    <label>시간 :</label>
+                    <label><input type="date"></label>
+                </div>
+
+                <div class="input_group">
+                    <label>시간 :</label>
+                    <label><input type="time" min="10:00" max="24:00"></label>
+                </div>
+
+                <div class="input_group">
+                    <input type="submit" value="제 출">
+                    <input type="reset" value="취 소">
+                    <input type="button" value="저장완료">
+                    <button id="order" onclick="move();">제출하기</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
