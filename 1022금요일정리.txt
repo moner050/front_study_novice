@@ -1,0 +1,88 @@
+html 수업 7시시작
+\\192.168.10.27
+https://drive.google.com/drive/folders/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7
+
+10회차 10월20일 수요일
+C:\Mtest\학생공유폴더\프론트엔드2\11일차
+
+11일차
+ ㄴtestMap.html 자바스크립트확인
+    <div align="center> </div>
+
+첫번째 자바스크립트 javascript에서 사용하는 객체 DOM모델 = BOM모델 
+   DOM모델=돔모델
+   ㄴ window,document,location,history,screen,image,string
+
+두번째 반응형웹 미디어쿼리 ===>금요일 실습
+  ㄴ screen키워드 사용  
+
+세번째 부트스트랩 bootstrap
+   ㄴ https://startbootstrap.com/
+
+4번째 jQuery는 자바스크립트 확장 
+   ㄴ https://jquery.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+08회차 10월11일 월요일
+09회차 10월13일 수요일
+10회차 10월18일 월요일
+ |- 플렉스 화면배치 레이아웃 속성 
+    index_flexnav.html문서
+ |- 폼태그 = css + javascript 
+
+https://drive.google.com/drive/folders/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7
+https://drive.google.com/drive/folders/1W5xIPYFWZ-0A2AgiZkQhzoDIA5OwBpF7
+
+
+ display속성
+ video태그/audio태그
+ 특수문자태그 
+ float속성
+
+https://www.lipsum.com/
+
+10회차 10월18일 월요일
+
+div/span 
+data/date
+text/test
+content/context
+
+// 슬래시
+\\ 역슬래시
+\\192.168.10.27
+
+
+/////////////////////////////////////////////////////////////////////////////////
+table태그이용, div태그이용되요
+
+플젝 
+ 리액트 수업전 
+ 리액트 수업후
+ 문서제출 
+
+
+2-1. VSCode를 실행하고 Command palette(명령팔레트)를 실행해 준다. (단축키 : ctrl + shift + p).
+2-2. 검색어로 cdl(Configure Display Language) 또는 표시언어구성을 입력하면 
+아래 리스트에 표시언어구성(Configure Display Language)을 확인할 수 있다. 선택(Enter)해준다.
+
+출처: https://kcmschool.com/196 [web sprit]
