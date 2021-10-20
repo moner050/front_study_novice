@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> </title>
+  </head>
+  <body>
+    <main>
+      <h1>자바스크립트의 데이터 타입과 기본 데이터 타입</h1>
+      <p>자바스크립트의 변수는 모든 데이터 타입을 참조할 수 있다.(동적타입dynamically typed)
+         이 때 모든 프로그래밍 언어와 같이 자주 쓰이는 타입을 기본데이터 타입으로 지정하고 있으며
+        총 7가지가 있다.(string,number,bigint,boolean,symbol,null,undefined)
+      </p>
+      <article>
+        <h2>typeof Number 숫자형</h2>
+        <p>정수와 (float)부동소수점, 무한대(Infinity), NaN(Not a Number) 숫자가 아님의 오류 나타낸다.
+          숫자형은 *,+,-,/ 등의 연산을 할 수 있다.
+        </p>
+        <ul>
+          <li>
+            1/0 결과 <script>document.write(1/0);</script>
+          </li>
+          <li>
+            -1/0 결과 <script>document.write(-1/0);</script>
+          </li>
+          <li>
+            "구"/2 결과 <script>document.write("구"/2);</script>
+          </li>
+          <li>
+            "10"/2 결과 <script>document.write("10"/2);</script>
+            (자동으로 형 변환한다."10"->10)
+          </li>
+          <li>
+            " 10 "/2 : <script>document.write(" 10 "/2);</script>
+            (자동으로 형 변환한다." 10 "->10)
+          </li>
+
+          <p></p>
+          <li>typeof : 데이터 타입을 확인 할 수 있다.</li>
+          <li>x = 100; typeof x=
+<script>
+  let x=100; //정수
+  document.write(typeof x)
+</script>
+          </li>
+          <li>x=3.14;  typeof x=
+<script>
+  x=3.14; //소수
+  document.write(typeof x);
+</script>
+          </li>
+          <li>x=-1/0;  typeof x=
+<script>
+  x=-1/0; //Infinity
+  document.write(typeof x);
+</script>
+          </li>
+          <li>x="구"/2;  typeof x=
+<script>
+  x="구"/2; //NaN
+  document.write(typeof x);
+</script>
+          </li>
+          <li>x="구";  typeof x=
+<script>
+  x="구"; //문자열
+  document.write(typeof x);
+</script>
+          </li>
+          <li>x=new Number(100);, &nbsp;
+            
+<script>
+  x=new Number(100);
+  document.write(typeof x);
+</script>
+          </li>
+
+          <p></p>
+          <li>
+          100 == new Number(100) :<script>document.write(100==new Number(100))</script>
+          </li>
+          <li>
+          100 === new Number(100) :<script>document.write(100===new Number(100))</script>
+          </li>
+          <li>100 기본데이터 타입,new Number(100) 객체
+            : 둘다 value 100이고 기본데이터 타입이 훨씬 가볍다</li>
+        </ul>
+        <li>객체지향 언어에서 객체는 new 연산자로 생성한다.(자바스크립트 new를 생략할 때가 있다.)
+          예)Number 클래스로 객체를 생성-> new Number()
+        <br>이때 기본데이터 타입은 new 연산자 없이 선언할 수 있고 매우 가볍다.
+      </li>
+      </article>
+<script>
+  function typePrint(printVal){
+    let x=printVal;
+    document.write("x="+x+"; &nbsp; typeof x="+typeof x );
+  } 
+
+</script>
+      <article>
+        <h2>string 문자열을 표현하는 문자형</h2>
+        <ul>
+          <li><script>typePrint("안녕하세요!")</script>
+            <br>문자열은 "",'',``(큰따옴표,작은따옴표,백틱) 모두 사용가능
+          </li>
+          <li><script>typePrint(2+"이")</script></li>
+          <li><script>typePrint('A')</script>
+            <br>Character(char) 문자형이 존재하지 않는다.
+          </li>
+          <li><script>typePrint("NAN")</script></li>
+          <li><script>typePrint('Infinity')</script></li>
+          <li><script>typePrint('true')</script></li>
+          <li><script>typePrint('false')</script></li>
+          <li><script>typePrint('')</script></li>
+          <li><script>typePrint('100')</script></li>
+          <li><script>typePrint('100'/2)</script></li>
+
+          <!-- 과제 문자열이 파라미터로 오면 "" 큰 따옴표를 (X="")를 출력하세요 -->
+        </ul>
+      </article>
+   
+
+      <article>
+        <h2>Boolean 논리 연산, 논리 타입, 불린형(true,false)</h2>
+        <p>==,!=,>,<,A&&B(A AND B-교집합),A||B(A or B-합집합),!(not)
+           등의 연산자의 결과 or value 가 있거나 없는 상태(0,null,undefined->false)
+         </p>
+        <ul>
+          <li><script>typePrint(1==1)</script></li>
+          <li>let x; , <script>typePrint();
+            document.write("&nbsp Boolean(undefined):"+Boolean(undefined));  </script></li>
+          <li>(null은 모든 데이터 타입에 대입가능->Object는 모든 데이터 타입의 부모) , <script>typePrint(null);
+            document.write("&nbsp Boolean(null):"+Boolean(null));  </script></li>
+          <li> <script>typePrint(NaN);
+            document.write("&nbsp Boolean(NaN):"+Boolean(NaN));  </script></li>
+          <li> <script>typePrint(0);
+            document.write("&nbsp Boolean(0):"+Boolean(0));  </script></li>
+          <li> <script>typePrint("");
+            document.write("&nbsp Boolean(''):"+Boolean(""));  </script></li>
+          <li><script>typePrint(false);
+            document.write("&nbsp Boolean(false):"+Boolean(false));  </script></li>
+          <li><script>typePrint(1>2);
+            document.write("&nbsp Boolean(1>2):"+Boolean(1>2));  </script></li>
+          <li><script>typePrint(1);
+            document.write("&nbsp Boolean(1):"+Boolean(1));  </script></li>
+          <li><script>typePrint(9999);
+            document.write("&nbsp Boolean(9999):"+Boolean(9999));  </script></li>
+          <li><script>typePrint(-9999);
+            document.write("&nbsp Boolean(-9999):"+Boolean(-9999));  </script></li>
+          <li>0과 NaN가 아닌 수는 true, 문자열의 길이가 있으면, ""아니면 true</li>
+          <li>(null==undefined)value가 false 를 반환하기 때문에 같다. (null===undefined) 본질적으로 다르다.
+              (상태를 나타내는 기본데이터 타입)
+          </li>null,undefined,NaN,0,"",(비교연산이의 결과가 false) 모두 boolean = false;
+        </ul>
+      </article>
+
+      <article>
+        <h2>상태를 나타내는 null과 undefined</h2>
+        <p>둘다 값이 정해지지 않은 상태로 undefined는 초기화 되지않은(선언되지않은) 상태고
+          null '타입'이 정해지지 않은 빈 상태
+        </p>
+        <script>
+          let nullData= null;//선언되었으나 빈상태
+          let undefinedData; //선언(초기화)되지 않은 상태
+          console.log("null==undefined:"+(nullData==undefinedData)); //ture
+          console.log("null===undefined:"+(nullData===undefinedData)); //false
+        </script>
+      </article>
+
+      <article>
+        <h2>기본데이터 타입은 아니지만 기본데이터 타입처럼 사용할 수 있는 배열과 json</h2>
+        <h3>let arr=[a,b,c,d]; : new 없이 생성 가능한 배열타입 ( arr=new Array(a,b,c,d))</h3>
+        <p>배열은 순서를 가지는 데이터타입으로 모든 데이터 타입을 참조할 수 있다.( 같은 데이터 타입을 참조하는 것을 권장)</p>
+        <script>
+          let arr=["a","b","c","d"];
+          console.log("arr: "+arr);
+          console.log("arr.length: "+arr.length);
+          console.log("arr[index=1]: "+arr[1]);
+          console.log("typeof arr: "+(typeof arr)); //array는 typeof로 object를 반환
+          console.log("Array.isArray(arr): "+Array.isArray(arr));//Array 타입 확인
+        </script>
+        <h3>let json={key:value,key2:value2} : new 없이 생성가능한 JSON 타입(new Object())</h3>
+        <p>json은 key와 value를 가지는 데이터 타입으로 new Object로 생성 가능하다.
+           이때 Object는 모든 클래스의 부모인 Object와 별개의 클래스다.</p>
+        <p>JavaScript Object Notaion의 줄인말로 경량 데이터 교환 형식이다.(언어에 독립적으로 문자열 형식이 중요하다)</p> <br><br><br>
+        <script>
+          let personObject = {firstName:"이", lastName:"자바", age:26, nationality:"korea"};
+          console.log(personObject);
+          console.log(personObject.firstName);
+          console.log(personObject["firstName"]);
+          console.log(personObject["age"]);
+          personObject["age"]=37;
+          console.log(personObject["age"]);
+        </script>
+      </article>
+
+    </main>
+  </body>
+</html>
