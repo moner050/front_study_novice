@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <style>
+        body
+        {
+            width: 80%;
+            margin: 2em auto;
+        }
+        nav ul
+        {
+            list-style: none;
+            padding: 0;
+        }
+        nav a:link,
+        nav a:visited 
+        {
+            background-color: whitesmoke;
+            border: 2px solid lightskyblue;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover
+        {
+            background: turquoise;
+        }
+        /* 미디어쿼리 공간비율을 분수로 나타냄 fr=fraction*/
+        @media screen and (min-width:40em)
+        {
+            article
+            {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                column-gap: 20px;
+            }
+            nav ul
+            {
+                display: flex;
+            }
+            nav li
+            {
+                flex: 1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h2>반응형 media쿼리</h2>
+
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="">메인화면</a></li>
+                    <li><a href="">서비스</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">로그인</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <div class="content">
+                    <h1>웹디자인</h1>
+                    <p>
+                        ...어쩌구 저쩌구 <br>
+                        ...프론트단 <br>
+                        ...백단서비스
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="sidebar">
+                    <h1>개발건 외부링크</h1>
+                    <ul>
+                        <li>
+                            <a href="">네이버</a>
+                            <a href="">다음</a>
+                            <a href="">구글</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <footer><p>  &copy;2021.10.23</p></footer>
+    </div>
+
+</body>
+</html>
