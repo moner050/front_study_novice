@@ -11,8 +11,8 @@
 /*
 HTML 웹표준 HTML5
 Javascript 스크립트 표준 : 이크마(ECMA) 스크립트 Script 5, 6, 7, 8
-ECMA Script 5 : ES5 - var 키워드
-ECMA Script 6 : ES6 - let, const 키워드
+ECMA Script 5 : ES5 - var(일반변수) 키워드
+ECMA Script 6 : ES6 - let(일반변수), const(상수형) 키워드
 타입스크립트(Type Script) : 변수 사용을 권장 
 
 // 선언적함수(이름있는함수)
@@ -22,8 +22,17 @@ var 키워드
 
 함수이름()   실행가능
 {}  중괄호는 함수실행 영역범위( 스코프 Scope )
-function 함수이름(){
-    var a=0;
+var aa = 100;       // 전역변수(함수 밖에서, 함수 안에서 모두 사용 가능)
+function 함수이름1()
+{
+    var a = 0;      // 지역변수(함수 안에서만 사용가능. 함수 밖에서는 사용 불가능)
+    var b = 100;    // ''
+}
+
+function 함수이름2()
+{
+    var a = 0;      // 지역변수(함수 안에서만 사용가능. 함수 밖에서는 사용 불가능)
+    var b = 100;    // ''
 }
 함수이름() 실행가능
 
@@ -47,8 +56,9 @@ var 변수 = function(){
 
 */
 
-//babo(190); 
-function babo(z){  //z 매개변수
+// babo(190); 
+function babo(z)
+{  //z 매개변수
 
     alert('선억적함수 실행!!!! ' + z );
 }
@@ -57,10 +67,10 @@ function babo(z){  //z 매개변수
 
 
 //babo2(999); //실행 오류
-//var babo2 = function(z){
+//var babo2 = function(z){      // 매개변수 z Parameter 파라미터
 //  alert('익명함수 실행!!!! ' + z );
 //}
-//babo2(999);
+//babo2(999);   // 전달인자 999 Argument
 
 
 
@@ -69,7 +79,8 @@ function babo(z){  //z 매개변수
 // })(1000, 900);
 
 
-(function($){
+(function($)            // 특수문자 중 변수로 사용 가능한 문자 : _ $
+{
     var txt = '<mark>제이쿼리 타이틀 입니다.</mark>';
 
     //.html() 메서드(함수)
@@ -83,16 +94,20 @@ function babo(z){  //z 매개변수
     $('.title').html(txt);
 
     //객체 
-    var starbucks = {
-        init: function(){  //메서드(함수)
+    var starbucks = 
+    {
+        init: function()
+        {  //메서드(함수)
             this.header();
             this.section1();
         },
-        header: function(){
+        header: function()
+        {
             var cnt = 0;
                 cnt=50;
         },
-        section1: function(){
+        section1: function()
+        {
             var cnt = 0;
                 cnt=100;
         }
