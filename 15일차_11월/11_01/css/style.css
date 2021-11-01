@@ -1,1 +1,71 @@
 @import url('./reset.css');
+
+
+#wrap
+{
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#wrap button
+{
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#wrap button:hover
+{
+    border: 1px solid #f21;
+}
+
+#wrap button:active
+{
+    background: #f99;
+}
+
+/* 메인 슬라이드*/
+.slide-container
+{
+    width: 100%;
+}
+.slide-container .slide-view
+{   
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-container .slide-view .slide-wrap
+{
+    width: 300%;
+    position: relative;
+    left: calc(-1903px*0);
+}
+
+.slide-container .slide-view .slide-wrap .slide
+{
+    width: 100%;
+    max-width: 1903px;
+    height: 969px;
+    float: left;
+}   
+
+.slide-container .slide-view .slide-wrap .slide0
+{
+    background: url(../img/wedding-img1.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+.slide-container .slide-view .slide-wrap .slide1
+{
+    background: url(../img/wedding-img2.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+.slide-container .slide-view .slide-wrap .slide2
+{
+    background: url(../img/wedding-img3.jpg) no-repeat 0 0;
+    background-size: cover;
+}
