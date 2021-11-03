@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url(./fonts.css);
+@import url(./reset.css);
+
+#skip
+{
+    width: 100%;
+}
+#skip li
+{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+#skip li a
+{
+    display: block;
+    width: 100%;
+    height: 0px;
+    line-height: 0px;
+    font-size: 0px;
+    color: #fff;
+    text-align: center;
+}
+#skip li a:focus
+{
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    background: #000;
+}
+
+#wrap 
+{
+    width: 100%;
+    height: 100%;
+}
+#wrap #header
+{
+    width: 100%;
+    height: 120px;
+    background: #f0f0f0;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #f6f5ef;
+}
+#wrap #header .container
+{
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #f2f3;
+}
+
+
+#wrap #main
+{
+    width: 100%;
+}
+#wrap #main #section1
+{
+    width: 100%;
+}
+#wrap #main #section1 .container
+{
+    width: 100%;
+}
+#wrap #main #section1 .container .slide-container
+{
+    width: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view
+{
+    width: 100%;
+    overflow: hidden;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap
+{
+    width: calc(1903px*5);
+    margin-left: -1903px;
+    position: relative;
+    top: 0;
+    left: carc(-1903px * 0);
+    
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide
+{
+    width: 1903px;
+    height: 969px;
+    float: left;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide0
+{
+    background: url(../img/wedding-img1.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide1
+{
+    background: url(../img/wedding-img2.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide2
+{
+    background: url(../img/wedding-img3.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+#wrap #main
+{
+    
+}
+#wrap #main #section2
+{
+    
+}
+#wrap #main #section2 .container
+{
+    
+}
+
+#wrap #main
+{
+    
+}
+#wrap #main #section3
+{
+    
+}
+#wrap #main #section3 .container
+{
+    
+}
+
+#wrap #main
+{
+    
+}
+#wrap #main #section4
+{
+    
+}
+#wrap #main #section4 .container
+{
+    
+}
+
+#wrap #main
+{
+    
+}
+#wrap #main #section5
+{
+    
+}
+#wrap #main #section5 .container
+{
+    
+}
+
+#wrap #footer
+{
+
+}
+#wrap #footer .container
+{
+
+}
