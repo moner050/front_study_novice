@@ -66,11 +66,14 @@
 #wrap #main #section1 .container .slide-container
 {
     width: 100%;
+    position: relative;
 }
 #wrap #main #section1 .container .slide-container .slide-view
 {
     width: 100%;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 #wrap #main #section1 .container .slide-container .slide-view .slide-wrap
 {
@@ -101,6 +104,45 @@
 {
     background: url(../img/wedding-img3.jpg) no-repeat 0 0;
     background-size: cover;
+}
+/* 좌우 화살표 버튼 */
+#wrap #main #section1 .container .slide-container .next-btn
+{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #fff;
+    font-size: 50px;
+    margin-top: -25px;
+}
+#wrap #main #section1 .container .slide-container .next-btn a
+{
+    
+}
+#wrap #main #section1 .container .slide-container .next-btn a i
+{
+
+}
+
+
+#wrap #main #section1 .container .slide-container .prev-btn
+{
+    z-index: 2;
+    position: absolute;
+    top:50%;
+    left: 0;
+    color: #fff;
+    font-size: 50px;
+    margin-top: -25px;
+}
+#wrap #main #section1 .container .slide-container .prev-btn a
+{
+
+}
+#wrap #main #section1 .container .slide-container .prev-btn a i
+{
+
 }
 
 #wrap #main
