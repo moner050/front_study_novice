@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* 글꼴 */
+@import url(./reset.css);
+
+
+ul#skip {width: 100%;}
+ul#skip li {width: 100%;}
+ul#skip li a 
+{
+    display: block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 0px;
+    font-size: 0px;
+}
+ul#skip li a:focus
+{
+    line-height: 50px;
+    font-size: 20px;
+}
+
+div#wrap {width: 100%;}
+div#wrap #header {width: 100%;}
+
+div#wrap #main {width: 100%;}
+div#wrap #main #section1 {width: 100%;}
+div#wrap #main #section1 .container
+{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+/* 메인 배너 슬라이드 시작 */
+
+div#wrap #main #section1 .container .slide-container
+{
+    width: 100%;
+    position: relative;
+}
+div#wrap #main #section1 .container .slide-container .slide-view
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap
+{
+    width: calc(1280px * 5);
+    margin: 0 0 0 -1280px;
+    position: relative;
+    
+}
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide
+{
+    width: 100%;
+    max-width: 1280px;
+    float: left;
+}
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .slide0
+{
+    background: url(../img/wedding-img1.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .slide1
+{
+    background: url(../img/wedding-img2.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .slide2
+{
+    background: url(../img/wedding-img3.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide div {margin: 0;}
+div#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide div img{width: 100%;}
+
+/* 화살버튼 */
+div#wrap #main #section1 .container .slide-container .next-wrap
+{
+    position: absolute;
+    top: 50%;
+    margin: -50px 0 0 0;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+}
+div#wrap #main #section1 .container .slide-container .next-wrap a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+div#wrap #main #section1 .container .slide-container .next-wrap a i
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+div#wrap #main #section1 .container .slide-container .prev-wrap
+{
+    position: absolute;
+    top: 50%;
+    margin: -50px 0 0 0;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+div#wrap #main #section1 .container .slide-container .prev-wrap a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+div#wrap #main #section1 .container .slide-container .prev-wrap a i
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+/* 메인 배너 슬라이드 끝 */
+
+
+div#wrap #footer {}
