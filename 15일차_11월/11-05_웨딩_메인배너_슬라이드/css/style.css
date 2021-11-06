@@ -133,4 +133,10 @@ div#wrap #main #section1 .container .slide-container .prev-wrap a i
 /* 메인 배너 슬라이드 끝 */
 
 
-div#wrap #footer {}
+div#wrap #footer 
+{
+    height: 400px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
