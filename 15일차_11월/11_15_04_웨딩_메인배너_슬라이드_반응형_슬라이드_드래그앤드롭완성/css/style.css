@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('./reset.css');
+
+ul#skip {width:100%;}
+ul#skip li {width:100%;}
+ul#skip li a {display:block;background:#000;color:#fff;text-align:center;line-height:0;font-size:0;}
+ul#skip li a:focus {line-height:50px;font-size:20px;}
+
+#wrap {width:100%;}
+#wrap #header {width:100%;}
+
+#wrap #main {width:100%;}
+#wrap #main #section1 {width:100%;}
+#wrap #main #section1 .wrap {width:100%;}
+#wrap #main #section1 .wrap .slide-container {position:relative;width:100%;}
+#wrap #main #section1 .wrap .slide-container .slide-view {z-index:1;position:relative;width:100%;overflow: hidden;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap {position:relative;width:500%;margin-left:-100%;left:0;top:0;pointer-events:none;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide {width:1903px;height:969px; /* JS 창너와 창높이 */ float:left;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/wedding-img1.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/wedding-img2.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section1 .wrap .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/wedding-img3.jpg) no-repeat 50% 50%;background-size:cover;}
+
+/* 화살버튼 */
+#wrap #main #section1 .wrap .slide-container span.next-btn-wrap {z-index:2;position:absolute;top:50%;margin-top:-50px;right:0;width:100px;height:100px;display:block;}
+#wrap #main #section1 .wrap .slide-container span.next-btn-wrap a {display:block;width:100px;height:100px;padding:25px 25px 25px 25px;}
+#wrap #main #section1 .wrap .slide-container span.next-btn-wrap a i {display:block;width:50px;height:50px;transform: rotate(45deg);border-top:2px solid #fff;border-right:2px solid #fff;}
+
+#wrap #main #section1 .wrap .slide-container span.prev-btn-wrap {z-index:2;position:absolute;top:50%;margin-top:-50px;left:0;width:100px;height:100px;display:block;}
+#wrap #main #section1 .wrap .slide-container span.prev-btn-wrap a {display:block;width:100px;height:100px;padding:25px 25px 25px 25px;}
+#wrap #main #section1 .wrap .slide-container span.prev-btn-wrap a i {display:block;width:50px;height:50px;transform: rotate(-45deg);border-top:2px solid #fff;border-left:2px solid #fff;}
+
+/* 페이지 버튼 */
+#wrap #main #section1 .wrap .slide-container .page-btn-wrap {z-index: 2;position:absolute;bottom:30px;left:0;width:100%;height:15px;text-align: center;}
+#wrap #main #section1 .wrap .slide-container .page-btn-wrap span {display: inline-block;margin:0 5px;width:15px;height:15px;}
+#wrap #main #section1 .wrap .slide-container .page-btn-wrap span a {display:block;width:15px;height:15px;background:#77c;border-radius:50%;}
+#wrap #main #section1 .wrap .slide-container .page-btn-wrap span a.addCurrent {background:#f33;}
+
+
+
+#wrap #footer {width:100%;}

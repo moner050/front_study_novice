@@ -28,7 +28,7 @@
     //메인 베너 슬라이드 구현
     // 1. 메인 슬라이드 함수
     function mainSlide(){
-        console.log("슬라이드");
+        // console.log("슬라이드");
         $('.slide-wrap').stop().animate({left:  -w*cnt}, 500, function()
         {
             if(cnt>2){cnt=0}
@@ -94,28 +94,30 @@
         });
     })
 
-    // 7. 터치 스와이프 이벤트
+    // 7. 터치 스와이프 이벤트 : 마우스 다운, 마우스 업
+    //    드래그 & 드롭 이벤트 : 마우스 다운, 마우스 무브, 마우스 업
     var start = null;
     var end = null;
-    if($('.slide-wrap').is(':animated') )
-    {
-        console.log('너무빠름');
-    }
-    else
-    {
+
+    // 드래그 변수
+    var dragStart = null;
+    var dragEnd = null;
+    var mouseDown = null;
+
         $('.slide-view').on({
             mousedown: function(event)  // 마우스가 클릭됐을때
             {
                 // console.log('이벤트', event)
                 // console.log('이벤트.clientX', event.clientX)
                 start = event.clientX;
+                dragStart = event.offsetX - $('.slide-wrap').offset().left-1903;
+                mouseDown = true;
             },
             mouseup: function(event)    // 마우스 버튼이 올라왔을때
             {
-                end = event.clientX;
-                console.log('start', start);
-                console.log('end', end);
-                console.log('start - end : ',start - end);
+                // end = event.clientX;
+                end = event.offsetX;
+
                 if(start-end > 120)
                 {
                     nextCount();
@@ -124,7 +126,34 @@
                 {
                     prevCount();
                 }
+                // 마우스 업 드래그 좌표
+                console.log("드래그 영역값 계산" + dragEnd - dragStart);
+                mouseDown = false;
+            },
+            mouseout: function(event)
+            {
+                if( !mouseDown ){return}
+                // end = event.clientX;
+                end = event.offsetX;
+
+                if(start-end > 120)
+                {
+                    nextCount();
+                }
+                else if(start-end < -120)
+                {
+                    prevCount();
+                }
+                // 마우스 업 드래그 좌표
+                console.log("드래그 영역값 계산" + dragEnd - dragStart);
+                mouseDown = false;
+            },
+            mousemove : function(event)
+            {
+                // 마우스 다운이 참이 아니면 탈출
+                if( !mouseDown ){return}
+                dragEnd = event.offsetX;
+                $('.slide.wrap').css({left: dragEnd-dragStart});
             }
-        })
-    }
+        });
 })(jQuery, window);
