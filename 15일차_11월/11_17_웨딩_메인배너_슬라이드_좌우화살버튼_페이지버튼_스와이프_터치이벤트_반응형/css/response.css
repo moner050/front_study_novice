@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media all and (max-width: 980px){
+    #wrap #main #section1 .wrap .slide-container span.next-btn-wrap {display: none;}
+    #wrap #main #section1 .wrap .slide-container span.prev-btn-wrap {display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
