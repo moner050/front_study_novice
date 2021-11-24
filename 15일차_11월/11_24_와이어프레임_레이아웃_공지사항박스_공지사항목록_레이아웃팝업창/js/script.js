@@ -23,7 +23,31 @@
         }
     });
 
+    ///////////////////////////   메인 슬라이드   ////////////////////////////////////////////
+    var cnt = 0;
+    var slideWrap = $('.slide-wrap');
 
+    // 1. 메인슬라이드 함수
+    function mainSlide()
+    {
+        slideWrap.stop().animate({ left: -1200*cnt }, 800 ,'easeInOutExpo',function(){
+            if(cnt > 2){cnt=0}
+            slideWrap.stop().animate({ left: -1200*cnt}, 0);
+        });
+    }
+
+    // 2. 다음 카운트 함수
+    function nextCount()
+    {
+        cnt++;
+        mainSlide();
+    }
+
+    // 3. 타이머(setInterval) 3초간격 반복
+    setInterval(nextCount ,3000);
+
+
+    //////////////////////////////////////////////////////////////////////////////////////////
 
     // 갤러리 버튼 클릭 이벤트
     $('.gallery-btn').on({
