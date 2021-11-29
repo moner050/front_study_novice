@@ -8,5 +8,6 @@ a {color:#333;text-decoration: none;}
 h1, h2, h3, h4, h5, h6 {font-size: 14px;font-style: normal;}
 em, i, address {font-style: normal;}
 /* strong {font-weight: normal;} */
-hide {display: none;}
+.hide {display: none;}
 .clearfix::after{content:'';display: block;clear: both;}
+.blind {display: block; text-indent: -2000px; overflow: hidden;}
