@@ -104,7 +104,8 @@
 #wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul {width: 100%;}
 #wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li {width: 33.333%; float: left;}
 #wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li .img-gap {padding: 0 10px 0 0;}
-#wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li .img-gap .img-bg {width: 100%; height: 108px;}
+#wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li .img-gap .img-bg {width: 100%; height: 108px; transition: all .3s;}
+#wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li:hover .img-gap .img-bg {width: 100%; height: 108px; opacity: .6; cursor: url(../img/icon-zoom.png) ,auto;}
 #wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li:nth-child(1) .img-gap .img-bg 
 {background: url(../img/wedding-img1.jpg) no-repeat 50% 50%; background-size: cover;}
 #wrap #main #section2 .left .gap .container .gallery-box .gallery-gap .contents ul li:nth-child(2) .img-gap .img-bg 
