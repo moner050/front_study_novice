@@ -40,7 +40,7 @@
             this.section1();
             this.section2();
             this.section3();
-            this.footer();
+            // this.footer();
             this.popup();
             this.jsondata();
         },
@@ -134,9 +134,9 @@
 
             var 배열객체 = [
                 {메인메뉴:'메인메뉴-1', 서브메뉴:['서브메뉴-1','서브메뉴-2','서브메뉴-3','서브메뉴-4']},
-                {메인메뉴:'메인메뉴-2', 서브메뉴:['서브메뉴-1','서브메뉴-2','서브메뉴-3','서브메뉴-4']},
-                {메인메뉴:'메인메뉴-3', 서브메뉴:['서브메뉴-1','서브메뉴-2','서브메뉴-3','서브메뉴-4']},
-                {메인메뉴:'메인메뉴-4', 서브메뉴:['서브메뉴-1','서브메뉴-2','서브메뉴-3','서브메뉴-4']}
+                {메인메뉴:'메인메뉴-2', 서브메뉴:['서브메뉴-1','서브메뉴-2','서브메뉴-3','서브메뉴-4','서브메뉴-5']},
+                {메인메뉴:'메인메뉴-3', 서브메뉴:['서브메뉴-1','서브메뉴-2','서브메뉴-3']},
+                {메인메뉴:'메인메뉴-4', 서브메뉴:['서브메뉴-1','서브메뉴-2']}
             ];
             console.log(배열[0]);
             console.log(배열[1]);
@@ -177,28 +177,118 @@
             console.log(result);
 
             // for in
-            for(i in 배열)
-            {
-                
+            // 메인메뉴를 출력한다. 행(줄)
+            // 서브메뉴를 출력한다. 열(칸)
+            for(i in 배열객체){ // 행
+                console.log('===================');
+                console.log(배열객체[i].메인메뉴);
+                console.log('-------------------');
+                for(j in 배열객체[i].서브메뉴) // 열(칸번호)
+                {
+                    console.log(배열객체[i].서브메뉴[j]);
+                }
+                console.log('===================')
             }
 
 
+
+            // for of
+            // 메인메뉴를 출력한다. 행(줄)
+            // 서브메뉴를 출력한다. 열(칸)
+            for(i in 배열객체){ // 행
+                console.log('===================');
+                console.log(배열객체[i].메인메뉴);
+                console.log('-------------------');
+                for(j of 배열객체[i].서브메뉴) // 열(칸번호)
+                {
+                    console.log(j);
+                }
+                console.log('===================')
+            }
+
+
+            배열객체.forEach(function(v, i) {
+                console.log(배열객체[i].메인메뉴);
+                배열객체[i].서브메뉴.forEach(function(z, j) {
+                    console.log(배열객체[i].서브메뉴[j]);
+                })
+            });
+
+
+            배열객체.forEach(function(v) {
+                console.log(v.메인메뉴);
+                v.서브메뉴.forEach(function(z) {
+                    console.log(z);
+                })
+            });
+
+            배열객체.map(function(v) {
+                console.log(v.메인메뉴);
+                v.서브메뉴.map(function(z) {
+                    console.log(z);
+                })
+            });
 
 
         },
         popup: function()
         {
-            // 팝업창 열기 이벤트
-            $('.notice-list-btn').on({
-                click: function()
-                {
-                    var txt = $(this).text();
-                    var dates = $(this).next().text();
-                    $('.title').text( txt );
-                    $('.date').text( dates );
-                    $('#popup').stop().show();
+            // 공지사항 목록 외부파일(news.json) 가져오기(get) - AJAX(비동기 처리방식)
+            $.ajax({
+                url:'./data/news.json',
+                type:'GET',
+                success: function(result) { // 가져온 결과 데이터
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[0].제목);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[0].날짜);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[1].제목);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[1].날짜);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[2].제목);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[2].날짜);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[3].제목);
+                    // console.log('AJAX 데이터 가져오기 결과:',result.공지사항[3].날짜);
+
+                    for(i in result.공지사항)
+                    {
+                        console.log(result.공지사항[i].제목);
+                        console.log(result.공지사항[i].날짜);
+                        
+                    }
+
+                    var txt = '';
+                    for(item of result.공지사항)
+                    {
+                        txt += '<li><a href="#" class="notice-list-btn">' + item.제목 + '</a><span>'+ item.날짜 + '</span></li>';
+                    }
+
+                    $('.notice-box ul').html(txt)
+
+                },
+                error: function() {
+                    console.log("AJAX Error !!!");
                 }
             });
+
+            // 폴리필
+
+            $(document).on('click','.notice-list-btn', function() {
+                var txt1 = $(this).text();
+                var dates1 = $(this).next().text();
+                $('.title').text( txt1 );
+                $('.date').text( dates1 );
+                $('#popup').stop().show();
+            });
+
+            // 팝업창 열기 이벤트
+            // $('.notice-list-btn').on({
+            //     click: function()
+            //     {
+            //         var txt = $(this).text();
+            //         var dates = $(this).next().text();
+            //         $('.title').text( txt );
+            //         $('.date').text( dates );
+            //         $('#popup').stop().show();
+            //     }
+            // });
             // 팝업창 닫기 이벤트
             $('.close_btn').on({
                 click: function()
