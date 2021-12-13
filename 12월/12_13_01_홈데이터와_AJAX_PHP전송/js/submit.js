@@ -1,5 +1,7 @@
 (function($)
 {
+    var cnt = 0;    // 누적 변수
+
     // 전송스토리
     // 폼 화면 입력상자에 데이터 입력
     // 전송버튼 클릭하면
@@ -12,6 +14,7 @@
     $('.submit-btn').on({
         click: function(event)   // 버튼의 고유기능(전송기능)을 제거
         {
+            cnt++;
             event.preventDefault();
 
             // 입력데이터 변수에 대입
@@ -35,11 +38,22 @@
                 },
                 success: function(result)
                 {
-                    // console.log("JSON 데이터", result);
-                    // console.log("문자데이터", JSON.stringify(result) );  // JSON -> 문자열
-                    // console.log("JSON데이터", JSON.parse(result) );      // 문자열 -> JSON
+                    // 로컬 스토리지 저장 : 키와 키값 한쌍으로 이루어진다.
                     var data = JSON.parse(result);
-                    console.log(data);
+                    var txt  = JSON.stringify(data.이름 +', '+ data.연락처 +', '+ data.소속);
+
+                    var txt2 = firum + ', ' + ftel + ', ' + fjob; 
+
+                    // 키값엔 문자열만 들어갈수 있음
+                    // localStorage.setItem(키(key), 키값(value));
+                    localStorage.setItem(cnt, txt2);
+                    $('#irum').val('');
+                    $('#tel').val('');
+                    $('#job').val('');
+
+                    // 로컬 스토레이지 삭제
+                    // 삭제할 키를 써주면 된다.
+                    localStorage.removeItem('1')
                 },
                 error: function(err)
                 {
@@ -50,3 +64,27 @@
         }
     })
 })(jQuery);
+
+
+    // console.log("JSON 데이터", result);
+    // console.log("문자데이터", JSON.stringify(result) );  // JSON -> 문자열
+    // console.log("JSON데이터", JSON.parse(result) );      // 문자열 -> JSON
+    // var txt = JSON.parse(result);
+    // var str = JSON.stringify(txt);       // json 객체 => 문자열
+
+    // console.log(txt['소속']);
+    // console.log(txt['이름']);
+    // console.log(txt['연락처']);
+
+    // var data = JSON.parse(result);
+    // console.log(data);
+    // console.log(data['이름']);
+    // console.log(data.이름);
+    // console.log(data['연락처']);
+    // console.log(data.연락처);
+    // console.log(data['소속']);
+    // console.log(data.소속);
+
+    // console.log('JSON데이터 result : ', result);
+    // console.log('JSON데이터 txt : ', txt);
+    // console.log('JSON데이터 str : ', str);
