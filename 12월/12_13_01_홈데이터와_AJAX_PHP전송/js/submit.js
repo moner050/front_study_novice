@@ -53,7 +53,10 @@
 
                     // 로컬 스토레이지 삭제
                     // 삭제할 키를 써주면 된다.
-                    localStorage.removeItem('1')
+                    localStorage.removeItem('1');
+                    // 모두 삭제할려면 clear를 써주면 된다.
+                    localStorage.clear();
+                    
                 },
                 error: function(err)
                 {
