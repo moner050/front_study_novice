@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import url('./reset.css');
+
+#wrap {width: 1000px; margin: 50px auto; border: 1px solid #ccc;}
+#wrap ul {padding: 50px;}
+#wrap ul li {padding: 0 0 0 80px; position: relative; margin: 5px 0;}
+#wrap ul li label {position: absolute; left: 0; top: 0; font-size: 17px; line-height: 50px;}
+#wrap ul li input {width: 100%; height: 50px; border: 1px solid #ddd; padding: 0 0 0 10px; color: #555; font-size: 17px;}
+#wrap ul li input::placeholder {font-size: 17px; color: #aaa;}
+
+#wrap .submit-btn {width: 100px; height: 40px ;background: #333; color: #ddd; font-size: 17px; display: block; margin: 0 auto 30px auto; cursor: pointer; border-radius: 5px;}
+#wrap .submit-btn:hover {background: #000; color: #ddd;}
