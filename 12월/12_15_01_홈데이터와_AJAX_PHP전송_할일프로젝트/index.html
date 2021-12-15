@@ -17,7 +17,7 @@
             <form action="./response.php" name="formsubmit" id="formsubmit" method="post">
                 <ul>
                     <li><label for="subject">제목</label><input type="text" id="subject" name="subject" placeholder="제목을 입력하세요"></li>
-                    <li><label for="content">할일내용</label><input type="text" id="content" name="content" placeholder="할일내용을 입력하세요"></li>
+                    <li><label for="content">내용</label><input type="text" id="content" name="content" placeholder="할일내용을 입력하세요"></li>
                 </ul>
                 <div class="button-box">
                     <button type="submit" class="submit-btn">ADD</button>
@@ -38,11 +38,7 @@
                 </thead>
                 
                 <tbody>
-                    <tr>
-                        <td><input type="checkbox" class="chk" value=""></td>
-                        <td><p>제목 리스트목록이 나타날 위치</p></td>
-                        <td><p>할일내용 리스트목록이 나타날 위치</p></td>
-                    </tr>
+                    <!-- 바인딩 내용 -->
                 </tbody>
             </table>
         </div>
