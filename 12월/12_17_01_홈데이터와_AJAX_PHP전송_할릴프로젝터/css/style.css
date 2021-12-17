@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('./reset.css');
+
+#wrap {width: 800px; margin: 50px auto 5px auto; border: 1px solid #ccc; background: #f9f9f9;}
+#wrap h1 {text-align: center; font-size: 40px; padding: 20px 0;}
+#wrap ul {padding: 50px;}
+#wrap ul li {padding: 0 0 0 80px; position: relative; margin: 5px 0;}
+#wrap ul li label {position: absolute; left: 0; top: 0; font-size: 17px; line-height: 50px;}
+#wrap ul li input {width: 100%; height: 50px; border: 1px solid #ddd; padding: 0 0 0 10px; color: #555; font-size: 17px;}
+#wrap ul li input::placeholder {font-size: 17px; color: #aaa;}
+
+#wrap button {display:inline-block;width: 110px; height: 43px ;background: #333; color: #ddd; font-size: 15px; margin: 0 auto 30px auto; cursor: pointer; border-radius: 5px;}
+#wrap button:hover {background: #000; color: #ddd;}
+
+.button-box {text-align: center;}
+
+#listBox {width: 800px; margin: 0px auto; border: 1px solid #ccc;}
+#listBox table {border-collapse: collapse; width: 100%; height: 100%;}
+#listBox table th,td {border: 1px solid #ccc; height: 45px;}
+
+#listBox table th {background: #f7f7f7; color: #000;}
+#listBox table td {color: #555; padding: 0 15px;}
+#listBox table td p {white-space: nowrap; width: 95%; text-overflow: ellipsis; overflow: hidden;}
+
+#listBox table th:nth-child(1) {width: 50px; text-align: center;}
+#listBox table th:nth-child(2) {width: 200px;}
+#listBox table th:nth-child(3) {width: 550px;}
+
+#listBox table td:nth-child(1) {text-align: center;}
+#listBox table td:nth-child(2) ,
+#listBox table td:nth-child(3) {white-space: nowrap;}
+
+
