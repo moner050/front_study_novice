@@ -17,17 +17,11 @@ border-bottom: 1px solid #e5e5e5;
 
 
 
-Sign In
-My Starbucks
-Customer Service & Ideas
-Find a Store
-
-COFFEE
-MENU
-STORE
-RESPONSIBILITY
-STARBUCKS REWARDS
-WHAT'S NEW
+커피 프레스
+푸어 오버
+아이스 푸어 오버
+커피 메이커
+리저브를 매장에서 다양하게 즐기는 법
 
 
 2. 메인영역
