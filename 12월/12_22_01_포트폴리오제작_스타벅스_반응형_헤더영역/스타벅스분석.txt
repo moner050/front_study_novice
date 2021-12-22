@@ -1,0 +1,87 @@
+스타벅스 분석자료
+
+와이어프레임 & 레이아웃
+요소들중 배경 이미지 크기 너비 포지션
+
+1. 헤더영역
+높이 123
+너비 100%(1218)
+배경색상 : #f6f5ef
+border-top: 2px solid #000;
+border-bottom: 1px solid #e5e5e5;
+
+콘텐츠 영역 너비 : 1100
+
+왼쪽 박스 : 로고 75*75
+오른쪽 박스 : 네비게이션 1025
+
+
+
+Sign In
+My Starbucks
+Customer Service & Ideas
+Find a Store
+
+COFFEE
+MENU
+STORE
+RESPONSIBILITY
+STARBUCKS REWARDS
+WHAT'S NEW
+
+
+2. 메인영역
+섹션1:  
+    너비 100%
+    높이 637
+    배경색상 #d1131d;
+    컨텐츠 관련 너비 1100
+
+섹션2:
+    너비 100%
+    높이 62
+    배경색상 좌: #000 우: #fff  background: 두 가지
+    컨텐츠 관련 너비 1100
+
+
+섹션3:
+    너비 100%
+    높이 658
+    배경색상 #f6f5ef
+
+섹션4:
+    너비 100%
+    높이 240
+    배경색상 #1e3932
+
+섹션5:
+    너비 100%
+    높이 573
+    배경색상 : #ffa59c;
+    컨텐츠 관련 너비 
+
+섹션6:
+    너비 100%
+    높이 400
+    배경색상 : #094a3d
+    이미지: reserve_christmas_bean_211018.jpg 페이드인 효과
+
+섹션7:
+    너비 100%
+    높이 800
+    이미지: fav_prod_bg_new.jpg 고정이미지
+
+섹션8:
+    너비 100%
+    높이 400
+    배경 색상 : #FFF 이미지 reserve_bg_pc.fav_prod_bg_new
+
+섹션9:
+    너비 100%
+    높이 400
+    이미지 store_bg.jpg
+
+3. 푸터영역
+    너비 100%
+    높이 534 + 67 = 601
+    배경 : #2C2A29
