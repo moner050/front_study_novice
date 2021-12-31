@@ -38,13 +38,15 @@
 
 /* 통합검색 */
 #wrap #header .container .right .top #aside ul li:last-child {padding:0 20px 0 0;}
-#wrap #header .container .right .top #aside ul li:last-child > div {position: relative; width: 34px; height: 34px; border: 1px solid #ccc; display: flex; padding: 0; border-radius: 5px; transition: all .3s ease-in-out;}
-#wrap #header .container .right .top #aside.addSearch ul li:last-child > div {width: 182px;}
-#wrap #header .container .right .top #aside ul li:last-child > div > div {position: absolute; top: 0;left: 0; width: 0; padding: 6px 10px; transition: all .3s ease-in-out;}
-#wrap #header .container .right .top #aside.addSearch ul li:last-child > div > div {width: 143px;}
-#wrap #header .container .right .top #aside ul li:last-child > div > div > input {width: 100%; height: 22px; background: #fff;}
-#wrap #header .container .right .top #aside ul li:last-child > div > a {display: block; width: 34px; height: 34px; position: relative; z-index: 2; margin: auto 0 auto auto; display: flex;}
-#wrap #header .container .right .top #aside ul li:last-child > div > a > img {width: 19px; margin: auto;}
+#wrap #header .container .right .top #aside ul li:last-child           form > div {overflow: hidden; position: relative; width: 34px; height: 34px; border: 1px solid #ccc; display: flex; padding: 0; border-radius: 5px; transition: all .3s ease-in-out;}
+#wrap #header .container .right .top #aside.addSearch ul li:last-child form > div {width: 182px;}
+#wrap #header .container .right .top #aside ul li:last-child           form > div > div {position: absolute; top: 0;left: 0; width: 0; padding: 6px 10px; transition: all .3s ease-in-out;}
+#wrap #header .container .right .top #aside.addSearch ul li:last-child form > div > div {width: 143px;}
+#wrap #header .container .right .top #aside ul li:last-child           form > div > div > input {width: 100%; height: 22px; background: #fff; padding: 0;}
+#wrap #header .container .right .top #aside.addSearch ul li:last-child form > div > div > input {width: 100%; height: 22px; background: #fff; padding: 0 15px;}
+#wrap #header .container .right .top #aside ul li:last-child           form > div > div > input::placeholder {color: #bbb;}
+#wrap #header .container .right .top #aside ul li:last-child           form > div > a {display: block; width: 34px; height: 34px; position: relative; z-index: 2; margin: auto 0 auto auto; display: flex; background: #fff;}
+#wrap #header .container .right .top #aside ul li:last-child           form > div > a > img {width: 19px; margin: auto;}
 
 
 
@@ -99,9 +101,19 @@
 
 
 
-#wrap #main {width: 100%;}
-#wrap #main #section1{width: 100%; height: 637px; background: #d1131d;}
-#wrap #main #section1 .container {width: 100%; max-width: 1100px; height: 100%; margin: 0 auto; background-color: rgba(0, 150, 0, .3);}
+#wrap #main {width: 100%; margin: 123px 0 0 0;}
+#wrap #main #section1{width: 100%; height: 637px; background: url(../img/2022_NewYear_main_bg.png) no-repeat 50% 50%; background-size: cover;}
+#wrap #main #section1 .container {position: relative; width: 100%; max-width: 1100px; height: 100%; margin: 0 auto;}
+#wrap #main #section1 .container .ani {position: absolute; display: block; opacity: 0;}
+#wrap #main #section1 .container .ani img {width: 100%;}
+#wrap #main #section1 .container .ani1 {top: 55px;left: 29px; width: 282px;}
+#wrap #main #section1 .container .ani2 {bottom: 83px;left:85px; width: 567px;}
+#wrap #main #section1 .container .ani3 {bottom: 198px; left: 428px; width: 492px;}
+#wrap #main #section1 .container .ani4 {bottom: 112px; left: 868px; width: 315px;}
+#wrap #main #section1 .container .ani5 {top: 225px;left: 110px; width: 125px; height: 38px;}
+#wrap #main #section1 .container .ani5 a {display: block; text-align: center; height: 100%; width: 100%; border: 2px solid #4f7161; color: #4f7161;border-radius: 5px; line-height: 30px; font-weight: 500; transition: all .6s;}
+#wrap #main #section1 .container .ani5 a:hover {background: #4f7161; color: #fff;}
+
 
 #wrap #main #section2{width: 100%; height: 62px; background-image: linear-gradient(to right, #000 0%, #000 50%, #f6f5ef 50%, #f6f5ef 100%);}
 #wrap #main #section2 .container {width: 100%; max-width: 1100px; height: 100%; margin: 0 auto; background-color: rgba(200, 200, 0, .3);}
