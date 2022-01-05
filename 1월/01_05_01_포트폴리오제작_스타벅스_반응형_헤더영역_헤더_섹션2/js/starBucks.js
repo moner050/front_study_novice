@@ -141,7 +141,45 @@
     },
     section3()
     {
-    
+        // 프로모션버튼 이벤트
+        // 한번 클릭하면 부드럽게 펼쳐지고(slideDown(300))
+        // 또 한번 클릭하면 부드럽게 접힌다.(slideUp(300))
+        // 슬라이드토글: slideToggle(300)
+        // $('#section3').slideUp(0);
+        
+        $('.promotion-btn').on({
+            click: function(e)
+            {
+                e.preventDefault();
+                $('#section3').slideToggle(300);
+            }
+        });
+
+        let cnt = 0;
+        // 1. 메인 슬라이드
+        function mainSlide()
+        {
+            $('.slide-wrap').stop().animate({left:-829*cnt}, 600, function()
+            {
+                if(cnt > 2)
+                {
+                    cnt = 0;
+                }
+                $('.slide-wrap').stop().animate({left:-829*cnt}, 0);
+            });
+        }
+        // 2. 다음 카운트
+        function nextCount()
+        {
+            cnt++;
+            mainSlide();
+        }
+        // 3. 타이머
+        function timer()
+        {
+            setInterval(nextCount, 2800);
+        }
+        timer();
     },
     section4()
     {
