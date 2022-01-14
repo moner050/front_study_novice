@@ -4,7 +4,9 @@
 {
     /* 수정할 속성만 두고 나머지는 상속(style.css 에서 지정한 내용 그대로) 단 여기서
     수정한 내용은 여기 수정 내용이 우선이다.*/
+    #wrap #header .container {padding: 0 15px;}
     #wrap #header .container .right {float: right; width: auto; height: 100%;}
+    
 
     /* 섹션1 비율계산 - 그리드방식(100분율 계산)*/
     /* 높이는 top, bottom 비율 계산의 기준이 되고(수직)
@@ -14,12 +16,14 @@
     #wrap #main #section1 .container .ani3 {bottom: 31.083%; left: 38.909%; width: 44.727%;}
     #wrap #main #section1 .container .ani4 {bottom: 17.582%; left: 78.909%; width: 28.636%;}
     #wrap #main #section1 .container .ani5 {top: 35.322%;left: 10.000%; width: 125px; height: 38px;}
+
+    #wrap #main #section2 .container {padding: 0 15px;}
 }
 
 @media all and (max-width:960px)
 {
     #wrap #header {height: 70px; border-top: 0;}
-
+    #wrap #header .container {padding: 0;}
     #wrap #header .container .left {width: 45px; margin-left: 10px;}
     #wrap #header .container .left h1 {line-height: 62px;}
     #wrap #header .container .left h1 a img {width: 100%;} 
@@ -31,6 +35,9 @@
     #wrap #main {margin: 70px 0 0 0;}
     #wrap #main #section1 {height: 600px;}
     #wrap #main #section1 .container .ani5 {top: 30%;left: 7.800%; width: 125px; height: 38px;}
+
+    #wrap #main #section2 {height: 80px; background-image: linear-gradient(to right, #000 0%, #000 50%, #f6f5ef 50%, #f6f5ef 100%);}
+    #wrap #main #section2 .container .left .left-box .notice-more {width: 80px; height: 80px; right: -61px; background: #000;}
 }
 
 @media all and (max-width:800px)
@@ -39,6 +46,22 @@
     #wrap #main #section1 .container .ani1 {width: 160px;}
     #wrap #main #section1 .container .ani5 {top: 27%;left: 5.000%;}
 }
+
+@media all and (max-width:660px)
+{
+    #wrap #main #section2 {height: 220px; background-image: linear-gradient(to bottom, #000 0%, #000 50%, #f6f5ef 50%, #f6f5ef 100%);}
+    #wrap #main #section2 .container {display: flex; flex-flow: column nowrap;}
+    #wrap #main #section2 .container .left {width: 100%; height: 50%; display: flex; position: relative;}   
+    #wrap #main #section2 .container .left .left-box .notice-title h2 {background: url(../img/icon_board_speaker.png) no-repeat 50% 0;background-size: auto 24px;}
+    #wrap #main #section2 .container .left .left-box .notice-more {right: 0; height: 100%; position: relative; z-index: 2;}
+    
+    #wrap #main #section2 .container .right {width: 100%; height: 50%; display: flex;}
+    #wrap #main #section2 .container .right .promotion {margin: auto; width: 234px; height: 36px; right: 0;}
+
+}
+
+
+
 
 @media all and (max-width:640px)
 {
