@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="LMH">
+    <title>리액트 시작하기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 리액트 오픈소스 -->
+    <script src="./js/lib/_react.development.js"></script>
+    <script src="./js/lib/_react-dom.development.js"></script>
+    <script src="./js/lib/_babel.min.js"></script>
+</head>
+<body>
+    <!-- 1. 돔 컨테이너(DOM Container) -->
+    <div id="wrap"></div>
+
+    <script type="text/babel">
+    
+        // 클래스형 컴포넌트
+        // class 클래스이름 extends React.컴포넌트
+        class HeaderComponent extends React.Component
+        {
+            render()
+            {
+                return(
+                    <>
+                        <header id='header' style={style1}>
+                            <h1 style={style2}>{this.props.title}</h1>
+                            <h2 style={style3}><span>프론트앤드</span> <strong style={style4}>{this.props.name}님</strong> <span>축하합니다.</span></h2>
+                        </header>
+                    </>
+                )
+            }
+        }
+
+        // 스크립트 스타일
+        const style1 = {
+            padding: "100px 0",
+            textAlign: "center",
+            lineHeight: "250%"
+        }
+
+        const style2 = {
+            fontSize: "50px",
+            color: "#39c",
+            fontWeight: "600",
+            paddingBottom: "40px"
+        }
+
+        const style3 = {
+            fontSize: "30px",
+            color: "#c66",
+            fontWeight: "500"
+        }
+
+        const style4 = {
+            fontSize: "40px",
+            color: "#3a7",
+            fontWeight: "500"
+        }
+        // 리액트-돔 랜더링
+        // 속성(properties) = 필드 = 맴버변수
+        ReactDOM.render(
+            <HeaderComponent name='민형' title='리액트(react) 프롬스 내려받기 해더 컴포넌트 입니다.'></HeaderComponent>,      //JSW
+            document.querySelector('#wrap')
+        );
+
+    </script>
+
+</body>
+</html>
