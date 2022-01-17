@@ -1,0 +1,21 @@
+현재 웹페이지 직접 제작
+
+리액트 React
+리액트-돔 React-Dom
+바벨   Babel
+
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+ES6
+필수js
+
+create-react-app        cli
+
+Reactjs 마켓플레이스 검색 후 설치 명령어
+rsc : 함수형 컴포넌트 자동생성
+rcc : 클래스형 컴포넌트 자동생성
+
+클래스형 함수 내에서
+class를 설정할때 className을 써야 한다.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="LMH">
+    <title>리액트 시작하기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 리액트 오픈소스 -->
+    <script src="./js/lib/_react.development.js"></script>
+    <script src="./js/lib/_react-dom.development.js"></script>
+    <script src="./js/lib/_babel.min.js"></script>
+</head>
+<body>
+    <!-- 1. 돔 컨테이너 박스 -->
+    <!-- 루트(Root) -->
+    <div id="app"></div>
+    
+
+    <script type="text/babel">
+
+        // 2. 리액트-돔과 돔 컨테이너와 연결
+        class SectionComponent extends React.Component
+        {
+            // 컴포넌트 내부에 랜더함수 위에 설정.
+            // 반드시 static 키워드를 표기한다(선언)
+            static defaultProps = 
+            {
+                title1: '한국의 맛있는 음식 소개',
+                title2: '전통적인 한국의 갈비와 비빔밥',
+                title3: '우리들이 좋아하는 음식',
+                food1: '돼지갈비',
+                food2: '양념갈비',
+                food3: '돌솥비빔밥',
+                food4: '전주비빔밥',
+                food5: '소갈비'
+            }
+
+
+            render()
+            {
+                return(
+                    <div>
+                        <div className="title">
+                            <h1 style={style.title.t1}>{this.props.title1}</h1>
+                            <h2 style={style.title.t2}>{this.props.title2}</h2>    
+                        </div>
+                        <div className="content">
+                            <h3 style={style.title.t3}>{this.props.title3}</h3>
+                            <ul>
+                                <li style={style.food.f1}>{this.props.food1}</li>
+                                <li style={style.food.f2}>{this.props.food2}</li>
+                                <li style={style.food.f3}>{this.props.food3}</li>
+                                <li style={style.food.f4}>{this.props.food4}</li>
+                                <li style={style.food.f5}>{this.props.food5}</li>
+                            </ul>
+                        </div>
+                    </div>
+                )
+            }
+        }
+
+
+        // 프롭스(Properties) = props 속성 = 필드 item attribute
+        // 컴포넌트이름.기본속성객체생성 = {}
+        // this.props.title1 프롬스 객체 속성 표현형식
+        // SectionComponent.defaultProps = 
+        // {
+        //     title1: '한국의 맛있는 음식 소개',
+        //     title2: '전통적인 한국의 갈비와 비빔밥',
+        //     title3: '우리들이 좋아하는 음식',
+        //     food1: '돼지갈비',
+        //     food2: '양념갈비',
+        //     food3: '돌솥비빔밥',
+        //     food4: '전주비빔밥',
+        //     food5: '소갈비'
+        // }
+
+        // 스타일 설정
+        const style = 
+        {
+            title: 
+            {
+                t1:
+                {
+                    fontSize: '50px',
+                    color: '#000',
+                    fontWeight: '600',
+                    textAlign: 'center'
+                },
+                t2:
+                {
+                    fontSize: '35px',
+                    color: '#38b',
+                    fontWeight: '500',
+                    textAlign: 'center'
+                },
+                t3:
+                {
+                    fontSize: '20px',
+                    color: '#b83',
+                    fontWeight: '400',
+                    textAlign: 'center'
+                }
+            },
+            food:
+            {
+                f1:
+                {
+                    fontSize: '17px', color: '#555'
+                },
+                f2:
+                {
+                    fontSize: '17px', color: '#5c5'
+                },
+                f3:
+                {
+                    fontSize: '17px', color: '#55c'
+                },  
+                f4:
+                {
+                    fontSize: '17px', color: '#c5c'
+                },
+                f5:
+                {
+                    fontSize: '17px', color: '#c55'
+                },
+            }
+        }
+
+
+        // 3. 리액트 컴포넌트(JSX) 생성(class react)하고 리액트-돔과 연결
+        ReactDOM.render
+        (
+            <SectionComponent></SectionComponent>,  //JSX
+            document.querySelector('#app')
+        );
+
+    </script>
+
+
+</body>
+</html>
