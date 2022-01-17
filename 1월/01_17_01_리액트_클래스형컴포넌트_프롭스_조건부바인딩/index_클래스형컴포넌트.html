@@ -40,20 +40,66 @@
 
             render()
             {
+                // 순수 js 코딩
+                console.log( this.props);
+                // 객체 구조분할 할당 === 객체 비구조화 할당
+                const obj = 
+                {
+                    학번: "10001",
+                    이름: "이순신",
+                    거주지: "서울시, 강남"
+                }
+                console.log ("객체.속성 ", obj.학번, obj.이름, obj.거주지);
+
+                const {학번, 이름, 거주지} = obj;
+                console.log('속성만으로  ', 학번, 이름, 거주지);
+
+                // 배열 구조분할 할당
+
+                // 배열 합병 merge
+                const arr = ['피자', '파스타', '랍스타', '탕수육', '팔보채'];
+                const arr2 = ['떡볶이', '오징어튀김', '김밥'];
+                // 배열 병합
+                const arrMerge = [] = [...arr, ...arr2];
+
+                /// ... 전개연산
+                console.log( [...arr, ...arr2] );
+                console.log([...arrMerge] );
+                console.log('배열 arrMerge = ', arrMerge );
+
+
+                const obj2 = 
+                {
+                    국어: "99",
+                    영어: "100",
+                    수학: "98"
+                }
+                
+                // 객체병합
+                const obj3 = {} = {...obj, ...obj2};
+                console.log( 'obj3 : ',obj3 );
+
+                // 프롭스 구조 분할 할당(비구조화 할당)
+                const {title1,title2,title3,food1,food2,food3,food4,food5} = this.props;
+                const {t1,t2,t3} = style.title;
+                const {f1,f2,f3,f4,f5} = style.food;
+                
+
+
                 return(
                     <div>
                         <div className="title">
-                            <h1 style={style.title.t1}>{this.props.title1}</h1>
-                            <h2 style={style.title.t2}>{this.props.title2}</h2>    
+                            <h1 style={t1}>{title1}</h1>
+                            <h2 style={t2}>{title2}</h2>    
                         </div>
                         <div className="content">
-                            <h3 style={style.title.t3}>{this.props.title3}</h3>
+                            <h3 style={t3}>{title3}</h3>
                             <ul>
-                                <li style={style.food.f1}>{this.props.food1}</li>
-                                <li style={style.food.f2}>{this.props.food2}</li>
-                                <li style={style.food.f3}>{this.props.food3}</li>
-                                <li style={style.food.f4}>{this.props.food4}</li>
-                                <li style={style.food.f5}>{this.props.food5}</li>
+                                <li style={f1}>{food1}</li>
+                                <li style={f2}>{food2}</li>
+                                <li style={f3}>{food3}</li>
+                                <li style={f4}>{food4}</li>
+                                <li style={f5}>{food5}</li>
                             </ul>
                         </div>
                     </div>
@@ -108,23 +154,23 @@
             {
                 f1:
                 {
-                    fontSize: '17px', color: '#555'
+                    fontSize: '17px', color: '#555', textAlign: 'center'
                 },
                 f2:
                 {
-                    fontSize: '17px', color: '#5c5'
+                    fontSize: '17px', color: '#5c5', textAlign: 'center'
                 },
                 f3:
                 {
-                    fontSize: '17px', color: '#55c'
+                    fontSize: '17px', color: '#55c', textAlign: 'center'
                 },  
                 f4:
                 {
-                    fontSize: '17px', color: '#c5c'
+                    fontSize: '17px', color: '#c5c', textAlign: 'center'
                 },
                 f5:
                 {
-                    fontSize: '17px', color: '#c55'
+                    fontSize: '17px', color: '#c55', textAlign: 'center'
                 },
             }
         }
