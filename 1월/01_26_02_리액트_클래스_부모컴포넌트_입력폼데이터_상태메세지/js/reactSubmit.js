@@ -46,13 +46,13 @@ class FormComponent extends React.Component
     {
         e.preventDefault();
 
-        let arr = [
+        let arr = 
             {
                 id: this.state.id,
                 subject: this.state.subjectValue,
                 date:this.state.dateValue
             }
-        ]
+        
         // JSON.stringify(arr) 객체를 문자열로 변환 > 출력시는 다시 객체로 변환(JSON.parse(arr))
         localStorage.setItem(this.state.id, JSON.stringify(arr) );
         // 번호 증가
@@ -120,26 +120,26 @@ class ListComponent extends React.Component {
         
         // map() 함수 이용 데이터 요소에 출력
         // key prop 오류남
-        // const listElement = a.map((item) => {
-        //     return(
-        //         <tr key={item.id}>
-        //             <td>{item.id}</td>
-        //             <td>{item.subject}</td>
-        //             <td>{item.date}</td>
-        //         </tr>
-        //     )
-        // });
-        
-        // 이게 왜 되는거지
         const listElement = a.map((item) => {
             return(
-                <tr key={item[0].id}>
-                    <td>{item[0].id}</td>
-                    <td>{item[0].subject}</td>
-                    <td>{item[0].date}</td>
+                <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.subject}</td>
+                    <td>{item.date}</td>
                 </tr>
             )
         });
+        
+        // 이게 왜 되는거지
+        // const listElement = a.map((item) => {
+        //     return(
+        //         <tr key={item[0].id}>
+        //             <td>{item[0].id}</td>
+        //             <td>{item[0].subject}</td>
+        //             <td>{item[0].date}</td>
+        //         </tr>
+        //     )
+        // });
 
 
         return (
@@ -163,6 +163,8 @@ class ListComponent extends React.Component {
 }
 
 ReactDOM.render(
-    <MainComponent/>,
-    document.querySelector('#app')
+    <React.StrictMode>
+        <MainComponent/>
+    </React.StrictMode>,
+    document.getElementById('app')
 );
