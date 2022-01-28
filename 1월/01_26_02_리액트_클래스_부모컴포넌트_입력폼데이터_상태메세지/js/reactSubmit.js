@@ -119,7 +119,6 @@ class ListComponent extends React.Component {
         console.log(a[4]);
         
         // map() 함수 이용 데이터 요소에 출력
-        // key prop 오류남
         const listElement = a.map((item) => {
             return(
                 <tr key={item.id}>
@@ -129,18 +128,6 @@ class ListComponent extends React.Component {
                 </tr>
             )
         });
-        
-        // 이게 왜 되는거지
-        // const listElement = a.map((item) => {
-        //     return(
-        //         <tr key={item[0].id}>
-        //             <td>{item[0].id}</td>
-        //             <td>{item[0].subject}</td>
-        //             <td>{item[0].date}</td>
-        //         </tr>
-        //     )
-        // });
-
 
         return (
             <>
