@@ -605,8 +605,8 @@ class MainComponent extends React.Component {
                                     </h2>
                                     <div>
                                         <h3 className="pc">
-                                            <strong>스타벅스 회원이세요?</strong><span>로그인을 통해<br/> 나만의 리워드를 확인해보세요.</span><br/>
-                                            <strong>스타벅스 회원이 아니세요?</strong><br/><span>가입을 통해 리워드 혜택을 즐기세요.</span>
+                                            <strong>스타벅스 회원이세요?</strong><span>로그인을 통해 나만의 리워드를 확인해보세요.</span><br/>
+                                            <strong>스타벅스 회원이 아니세요?</strong><span>가입을 통해 리워드 혜택을 즐기세요.</span>
                                         </h3>
                                         <h3 className="mobile">
                                             <strong>스타벅스 회원이세요?</strong><span>로그인을 통해<br/> 나만의 리워드를 확인해보세요.</span><br/>
@@ -653,7 +653,19 @@ class MainComponent extends React.Component {
                     
                     <section id="section6">
                         <div className="container">
-
+                            <div className="pc">
+                                <span>
+                                    <img className="font-img" src="./img/reserve_2022_hawaii_kau_title.png"></img>
+                                    <a href="#" className="more-btn">자세히보기</a>
+                                    <img className="pc-img" src="./img/reserve_2022_hawaii_kau_visual_v4.jpg" alt="하와이 카우"/>
+                                </span>
+                            </div>
+                            <div className="mobile">
+                                <span>
+                                    <img className="mobile-img" src="./img/m_reserve_2022_hawaii_kau_visual.jpg" alt="하와이 카우"/>
+                                    <a href="#" className="more-btn">자세히보기</a>
+                                </span>
+                            </div>
                         </div>
                     </section>
                     
