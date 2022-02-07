@@ -3,7 +3,6 @@ import HeaderComponent from './HeaderComponent';
 import MainComponent from './MainComponent';
 import FooterComponent from './FooterComponent';
 
-
 class WrapComponent extends Component {
     render() {
         return (
