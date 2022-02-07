@@ -168,7 +168,7 @@
                 {
                     clearInterval(setId);
                     cnt = 0;
-                    $('.slide-wrap').stop().animate({left:-829*cnt}, );
+                    $('.slide-wrap').stop().animate({left:-829*cnt}, 0);
                     $('.play-btn').addClass('stop');    // 버튼에 stop클래스를 추가하고 정지됨을 표시.
                     $('.play-btn').addClass('addPlay');
                     pageBtnEvent();
@@ -180,18 +180,15 @@
         // 반응형
         function resizefn()
         {
-            $(window).resize(function()
+            if($(window).innerWidth() <= 960)
             {
-                if($(window).innerWidth() <= 960)
-                {
-                    winWidth = $(window).innerWidth();
-                }
-                else
-                {
-                    winWidth = 829;
-                }
-                mainSlide();    // left값 결정.
-            });
+                winWidth = $(window).innerWidth();
+            }
+            else
+            {
+                winWidth = 829;
+            }
+            mainSlide();    // left값 결정.
         }
         resizefn();
 
