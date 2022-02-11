@@ -7,7 +7,7 @@ class MobieNavComponent extends Component {
                 <nav id="mobileNav" className="">
                     <div className="mobile-container">
 
-                        <span className="mobile-close"><a href="#"  className="mobile-close-btn"><img src="./images/btn_gnb_close.png" alt="" /></a></span>
+                        <span className="mobile-close"><a href="#"  className="mobile-close-btn"><img src={ process.env.PUBLIC_URL + "/images/btn_gnb_close.png" } alt="" /></a></span>
                         
                         <ul>
                             <li>
