@@ -9,7 +9,7 @@
     // 데이터베이스 헤더영역 - 데이터베이스 이름, 비밀번호, (인증) 데이터베이스 열기
     $serverName = 'localhost';
     $userName = 'moner050';
-    $userPwd = 'Sjsmsanjfk0502!';
+    $userPwd = 'PASSWORD';
     $dbName = 'moner050';
 
     $connector = mysqli_connect($serverName,$userName,$userPwd,$dbName);
