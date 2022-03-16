@@ -11,62 +11,129 @@
 </head>
 <body>
     <div id="skip">
-        <li><a href="#">메뉴 바로가기</a></li>
-        <li><a href="#">메인 바로가기</a></li>
-        <li><a href="#">푸터 바로가기</a></li>
+        <li><a href="#header">메뉴바로가기</a></li>
+        <li><a href="#main">메인바로가기</a></li>
+        <li><a href="#footer">푸터바로가기</a></li>
     </div>
 
     <div id="wrap">
-        <div id="header" class="clearfix">
-            <div class="left">
-                <h1><a href="#" title="JUST"><img src="" alt=""></a></h1>
+        <div class="popUpBox">
+            <div class="popUp">
+                <h2>JUST 쇼핑몰 팝업 제목</h2>
+                <P>팝업 내용</P>
+                <button>X 닫기</button>
             </div>
-            <div class="right clearfix">
+        </div>
+
+        <header id="header" class="clearfix">
+            <div class="left">
+                <h1><a href="#"><img src="" alt="JUST 쇼핑몰 로고"></a></h1>
+            </div>
+            <div class="right">
                 <nav id="nav">
                     <ul class="clearfix">
                         <li>
                             <a href="#" class="main-btn" title="탑">탑</a>
-                            <div class="sub">
-                                <ul><a href="#" title="블라우스">블라우스</a></ul>
-                                <ul><a href="#" title="티">티</a></ul>
-                                <ul><a href="#" title="셔츠">셔츠</a></ul>
-                                <ul><a href="#" title="니트">니트</a></ul>
-                            </div>
+                            <ul class="sub">
+                                <li><a href="#" title="블라우스">블라우스</a></li>
+                                <li><a href="#" title="티">티</a></li>
+                                <li><a href="#" title="셔츠">셔츠</a></li>
+                                <li><a href="#" title="니트">니트</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="main-btn" title="아우터">아우터</a>
-                            <div class="sub">
-                                <ul><a href="#" title="자켓">자켓</a></ul>
-                                <ul><a href="#" title="코트">코트</a></ul>
-                                <ul><a href="#" title="가디건">가디건</a></ul>
-                                <ul><a href="#" title="머플러">머플러</a></ul>
-                            </div>
+                            <ul class="sub">
+                                <li><a href="#" title="자켓">자켓</a></li>
+                                <li><a href="#" title="코트">코트</a></li>
+                                <li><a href="#" title="가디건">가디건</a></li>
+                                <li><a href="#" title="머플러">머플러</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="main-btn" title="팬츠">팬츠</a>
-                            <div class="sub">
-                                <ul><a href="#" title="청바지">청바지</a></ul>
-                                <ul><a href="#" title="짧은 바지">짧은 바지</a></ul>
-                                <ul><a href="#" title="긴바지">긴바지</a></ul>
-                                <ul><a href="#" title="레깅스">레깅스</a></ul>
-                            </div>
+                            <ul class="sub">
+                                <li><a href="#" title="청바지">청바지</a></li>
+                                <li><a href="#" title="짧은 바지">짧은 바지</a></li>
+                                <li><a href="#" title="긴바지">긴바지</a></li>
+                                <li><a href="#" title="레깅스">레깅스</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="main-btn" title="악세서리">악세서리</a>
-                            <div class="sub">
-                                <ul><a href="#" title="귀고리">귀고리</a></ul>
-                                <ul><a href="#" title="목걸이">목걸이</a></ul>
-                                <ul><a href="#" title="반지">반지</a></ul>
-                                <ul><a href="#" title="팔찌">팔찌</a></ul>
-                            </div>
+                            <ul class="sub">
+                                <li><a href="#" title="귀고리">귀고리</a></li>
+                                <li><a href="#" title="목걸이">목걸이</a></li>
+                                <li><a href="#" title="반지">반지</a></li>
+                                <li><a href="#" title="팔찌">팔찌</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
 
-        <div id="main"></div>
-        <div id="footer"></div>
+        <main id="main">
+            <div class="slideContainer">
+                <div class="slideWrap">
+                    <div class="slide">
+                        <p>슬라이드내용1</p>
+                        <a href="#"><img src="./img/slide01.png" alt="슬라이드1"></img></a>
+                    </div>
+                    <div class="slide">
+                        <p>슬라이드내용2</p>
+                        <a href="#"><img src="./img/slide02.png" alt="슬라이드2"></img></a>
+                    </div>
+                    <div class="slide">
+                        <p>슬라이드내용3</p>
+                        <a href="#"><img src="./img/slide03.png" alt="슬라이드3"></img></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="tap">
+                    <ul class="tapMenu">
+                        <li class="on"><a href="#">공지사항</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+
+                    <div class="tapItem">
+                        <ul class="notice on">
+                            <li><a href="#"></a><span>공지사항1</span></li>
+                            <li><a href="#"></a><span>공지사항2</span></li>
+                            <li><a href="#"></a><span>공지사항3</span></li>
+                        </ul>
+
+                        <ul class="gallery">
+                            <li><a href="#"><img src="./img/gallery01.png" alt="갤러리이미지1"></a></li>
+                            <li><a href="#"><img src="./img/gallery02.png" alt="갤러리이미지2"></a></li>
+                            <li><a href="#"><img src="./img/gallery03.png" alt="갤러리이미지3"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <a href="#">
+                        <h2>배너</h2>
+                        <img src="./img/banner.png" alt="배너이미지">
+                    </a>
+                </div>
+
+                <div class="link">
+                    <a href="#">
+                        <h2>바로가기</h2>
+                        <img src="./img/link.png" alt="링크이미지">
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="footer">
+
+        </footer>
+
     </div>
 
 

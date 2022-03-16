@@ -1,27 +1,63 @@
 @charset "UTF-8";
 @import url('./reset.css');
 
-#skip {width: 100%; top: 0; left: 0; position: fixed; z-index: 2;}
+#skip {width: 100%; top: 0; left: 0; position: fixed; z-index: 60;}
 #skip li {width: 100%;}
 #skip li a{display: block; width: 100%; text-align: center; font-size: 0; line-height: 0; color: #ffffff; background: #000;}
 #skip li a:focus{font-size: 20px; line-height: 50px;}
 
-#wrap {position: relative; z-index: 1; width: 1200px; margin: 0 auto; height: 700px;}
-#wrap #header {position: relative; z-index: 2; width: 100%; height: 100%;}
+#wrap {position: relative; z-index: 3; width: 1200px; margin: 0 auto; height: 700px;}
+/* 팝업 */
+#wrap .popUpBox {position: absolute; width: 100%; height: 100%; display: none; z-index: 999;}
+#wrap .popUpBox .popUp {position: absolute; width: 600px; left: 50%; top: 50%; text-align: center; line-height: 2; border: 1px solid #000; background: #fff; padding: 20px;}
+#wrap .popUpBox .popUp p {font-size: 15px; margin: 10px 0 0 0;}
+#wrap .popUpBox .popUp button {float: right; padding: 4px; cursor: pointer;}
+
+/* 헤더 */
+#wrap #header {position: relative; z-index: 2; width: 100%; height: 100px; display: flex; background: #d5d5d5;}
 #wrap #header .left {width: 200px; height: 100px; float: left;}
-#wrap #header .left h1{font-size: 25px; text-align: center; line-height: 80px;}
+#wrap #header .left h1{text-align: center; font-size: 0;}
 #wrap #header .left h1 a{width: 100%; height: 100%;}
 #wrap #header .left h1 a img{width: 100%; height: 100%;}
 
 #wrap #header .right {width: 1000px; height: 100px; float: left;}
-#wrap #header .right #nav {float: right; width: 700px; padding: 25px 25px 25px 0;}
-#wrap #header .right #nav > ul{width: 100%;}
-#wrap #header .right #nav > ul > li{float: left; width: 25%;}
-#wrap #header .right #nav > ul > li > a{display: block; line-height: 40px; text-align: center; color: #333333; font-size: 15px; background: #ffffff;}
+#wrap #header .right #nav {float: right; width: 700px; height: 100%;}
+#wrap #header .right #nav > ul { width: 100%; height: 100%; padding: 25px 25px 25px 0;}
+#wrap #header .right #nav > ul > li{float: left; width: 25%; height: 100%;}
+#wrap #header .right #nav > ul > li > a {display: block; line-height: 50px; text-align: center; color: #333333; font-size: 15px; background: #ffffff; height: 100%;}
 #wrap #header .right #nav > ul > li > a:hover{color: #ffffff; background: #333333;}
 
-#wrap #header .right #nav > ul > li > .sub {background: #ffffff; width: 100%;text-align: center; display: none;}
-#wrap #header .right #nav > ul > li > .sub ul {width: 100%; padding: 10px 0;}
-#wrap #header .right #nav > ul > li > .sub ul li {width: 100%;}
-#wrap #header .right #nav > ul > li > .sub ul li a {display: block; line-height: 28px;}
-#wrap #header .right #nav > ul > li > .sub ul li a:hover {background: #333333; color: #ffffff;}
+#wrap #header .right #nav > ul > li > .sub { width: 100%; height: 100%;}
+#wrap #header .right #nav > ul > li > .sub li {width: 100%; height: 100%;  text-align: center;}
+#wrap #header .right #nav > ul > li > .sub li a {display: block; line-height: 50px; height: 100%; background: #ffffff;}
+#wrap #header .right #nav > ul > li > .sub li a:hover {color: #ffffff; background: #333333;}
+
+/* 메인 */
+#wrap #main {width: 100%; height: 300px;}
+#wrap #main .slideContainer {width: 100%; height: 100%; overflow: hidden;}
+#wrap #main .slideContainer .slideWrap {width: 100%; height: 100%;}
+#wrap #main .slideContainer .slideWrap .slide{width: 100%; height: 100%; position: relative; z-index: 1;}
+#wrap #main .slideContainer .slideWrap .slide p{position: absolute; left: 0; top: 0; padding: 10px 20px; background: #f6f6f6;}
+
+#wrap #main .content {display: flex; width: 1200px; height: 200px;}
+#wrap #main .content .tap {width: 400px; height: 200px;}
+/* #wrap #main .content .tap .tapMenu {width: 100%;} */
+#wrap #main .content .tap .tapMenu li {display: inline-block; font-size: 18px; font-weight: 500;}
+#wrap #main .content .tap .tapMenu li a {display: block; padding: 10px;}
+#wrap #main .content .tap .tapMenu li.on {background: #c56af1;}
+
+#wrap #main .content .tap .tapItem > * {height: 162px; padding: 10px;}
+#wrap #main .content .tap .tapItem > *.on {background: #c56af1;}
+
+#wrap #main .content .tap .tapItem .notice li {display: flex; line-height: 2.2em;}
+#wrap #main .content .tap .tapItem .notice li a {display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#wrap #main .content .tap .tapItem .notice li span {margin: auto;}
+#wrap #main .content .tap .tapItem .notice li:hover {text-decoration: underline; cursor: pointer;}
+
+#wrap #main .content .tap .tapItem .gallery {display: none;}
+#wrap #main .content .tap .tapItem .gallery li {display: inline-block; width: 32%; margin: 8px 0 0 0;}
+#wrap #main .content .tap .tapItem .gallery li a img {width: 100%;}
+
+#wrap #main .content .banner, .link {position: relative;}
+#wrap #main .content .banner a, .link a {width: 400px; height: 200px;}
+#wrap #main .content .banner h2, .link h2 {position: absolute; top: 50%; left: 50%; font-size: 18px; font-weight: 600; padding: 10px; background: #fff; transform: translate(-50%, -50%);} 
