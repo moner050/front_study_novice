@@ -8,6 +8,8 @@
     <title>JUST 쇼핑몰</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
     <div id="skip">
@@ -21,7 +23,7 @@
             <div class="popUp">
                 <h2>JUST 쇼핑몰 팝업 제목</h2>
                 <P>팝업 내용</P>
-                <button>X 닫기</button>
+                <button>닫기</button>
             </div>
         </div>
 
@@ -75,19 +77,21 @@
 
         <main id="main">
             <div class="slideContainer">
-                <div class="slideWrap">
-                    <div class="slide">
-                        <p>슬라이드내용1</p>
-                        <a href="#"><img src="./img/slide01.png" alt="슬라이드1"></img></a>
-                    </div>
-                    <div class="slide">
-                        <p>슬라이드내용2</p>
-                        <a href="#"><img src="./img/slide02.png" alt="슬라이드2"></img></a>
-                    </div>
-                    <div class="slide">
-                        <p>슬라이드내용3</p>
-                        <a href="#"><img src="./img/slide03.png" alt="슬라이드3"></img></a>
-                    </div>
+                <div class="slideView">
+                    <ul class="slideWrap">
+                        <li class="slide slide1">
+                            <p>슬라이드내용1</p>
+                            <a href="#"><img src="./img/slide01.png" alt="슬라이드1"></img></a>
+                        </li>
+                        <li class="slide slide2">
+                            <p>슬라이드내용2</p>
+                            <a href="#"><img src="./img/slide02.png" alt="슬라이드2"></img></a>
+                        </li>
+                        <li class="slide slide3">
+                            <p>슬라이드내용3</p>
+                            <a href="#"><img src="./img/slide03.png" alt="슬라이드3"></img></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
