@@ -29,21 +29,21 @@
         },
         mainSlide: function()
         {
-            var cnt = -1;
-            var n = $('.slide').length-1;
+            var cnt = 0;
+            var slideWrap = $('.slideWrap');
 
             function mainSlide()
             { 
-                $('.slide')                   .css({zIndex:1}).stop().animate({opacity:1},    0);         // 모든 슬라이드 초기화
-
-                $('.slide').eq(cnt==n?0:cnt+1).css({zIndex:2});
-                $('.slide').eq(cnt)           .css({zIndex:3}).stop().animate({opacity:0}, 1000);
+                slideWrap.stop().animate({left: -1200*cnt}, 800, function()
+                {
+                    if(cnt > 2) {cnt = 0}
+                    slideWrap.stop().animate({left: -1200*cnt}, 0);
+                })
             }
 
             function nextCount()
             {
                 cnt++;
-                if(cnt > n) {cnt = 0;}
                 mainSlide();
             }
 
