@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green 복지재단</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
     <div id="skip">
@@ -14,10 +16,21 @@
         <li><a href="#footer">푸터바로가기</a></li>
     </div>
 
+    <div class="popUbBg"></div>
     <div id="wrap">
+        <div class="popUpBox">
+            <div class="popUp">
+                <h2>그린복지재단 팝업 제목</h2>
+                <p>여기에 팝업 내용을 작성</p>
+                <button>닫기</button>
+            </div>
+        </div>
+
+
         <header id="header">
+            <div class="headerBg"></div>
             <div class="left">
-                <h1>Green복지재단 로고<a href="#"><img src="" alt="Green복지재단 로고"></a></h1>
+                <h1>Green복지재단 로고<a href="#"><img src="./images/logo.png" alt="Green복지재단 로고"></a></h1>
             </div>
 
             <div class="right">
@@ -64,25 +77,69 @@
             <div class="slide-container">
                 <div class="slide-view">
                     <ul class="slide-wrap">
+                        <li class="slide slide3">
+                            <a href="#"><img src="./images/slide3.png" alt="슬라이드3">슬라이드3</a>
+                        </li>
                         <li class="slide slide1">
-                            <p>슬라이드내용1</p>
                             <a href="#"><img src="./images/slide1.png" alt="슬라이드1">슬라이드1</a>
                         </li>
                         <li class="slide slide2">
-                            <p>슬라이드내용2</p>
                             <a href="#"><img src="./images/slide2.png" alt="슬라이드2">슬라이드2</a>
                         </li>
                         <li class="slide slide3">
-                            <p>슬라이드내용3</p>
                             <a href="#"><img src="./images/slide3.png" alt="슬라이드3">슬라이드3</a>
+                        </li>
+                        <li class="slide slide1">
+                            <a href="#"><img src="./images/slide1.png" alt="슬라이드1">슬라이드1</a>
                         </li>
                     </ul>
                 </div>
             </div>
+
+            <div class="content">
+
+                <div class="notice">
+                    <h3><a href="#">공지사항</a></h3>
+                    <ul>
+                        <li><a href="#">공지사항공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항공지사항공지사항공지사항공지사항</a><span>공지사항날짜</span></li>
+                    </ul>
+                </div>
+
+                <div class="gallery">
+                    <h3><a href="#">갤러리</a></h3>
+                    <ul>
+                        <li><a href="#"><img src="./images/gal1.png" alt="갤러리이미지1"></a></li>
+                        <li><a href="#"><img src="./images/gal2.png" alt="갤러리이미지2"></a></li>
+                        <li><a href="#"><img src="./images/gal3.png" alt="갤러리이미지3"></a></li>
+                    </ul>
+                </div>
+
+                <div class="banner">
+                    <a href="#">
+                        <h2>배너</h2>
+                        <img src="./images/banner.png" alt="배너이미지">
+                    </a>
+                </div>
+
+            </div>
+
         </main>
 
         <footer id="footer">
-
+            <a href="#" class="footer-logo"><img src="./images/f_logo.png" alt="그린복지재단로고"></a>
+            <p class="copyright">copyright All right reserved 그린복지재단</p>
+            <div class="f_fam">
+                <select class="f_familly">
+                    <option id="fam1">패밀리사이트</option>
+                    <option id="fam2">네이버</option>
+                    <option id="fam3">다음</option>
+                    <option id="fam4">티스토리</option>
+                </select>
+            </div>
         </footer>
     </div>
 
