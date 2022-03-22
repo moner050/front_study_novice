@@ -29,26 +29,15 @@
         },
         mainSlide: function()
         {
-            var cnt = 0;
             var slideWrap = $('.slideWrap');
 
-            function mainSlide()
-            { 
-                slideWrap.stop().animate({left: -1200*cnt}, 800, function()
-                {
-                    if(cnt > 2) {cnt = 0}
-                    slideWrap.stop().animate({left: -1200*cnt}, 0);
-                })
-            }
-
-            function nextCount()
+            setInterval(function()
             {
-                cnt++;
-                mainSlide();
-            }
-
-            setInterval(nextCount, 3000);
-            
+                slideWrap.stop().animate({'margin-top':'-300'}, 600 ,function(){
+                    $('.slide:first').appendTo(slideWrap)
+                    $(slideWrap).css({'margin-top':'0'})
+                })
+            },3000)
         },
         tapMenu: function()
         {
