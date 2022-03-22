@@ -9,17 +9,17 @@
         },
         header: function()
         {
-            $('#nav > ul').on({
+            $('#nav > ul > li').on({
                 mouseenter: function()
                 {
-                    $('ul.sub').stop().slideDown(800);
+                    $(this).find('ul.sub').stop().slideDown();
                 },
                 focusin: function()
                 {
-                    $('ul.sub').stop().slideDown(800);
+                    $(this).find('ul.sub').stop().slideDown();
                 }
             });
-            $('#nav > ul').on({
+            $('#nav > ul > li').on({
                 mouseleave: function()
                 {
                     $('ul.sub').stop().slideUp(600);
