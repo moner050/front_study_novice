@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한투어</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+    <ul id="skip">
+        <li><a href="#">메뉴바로가기</a></li>
+        <li><a href="#">메인바로가기</a></li>
+        <li><a href="#">푸터바로가기</a></li>
+    </ul>
+
+    <div id="popUpBox">
+        <div class="popUp">
+            <h2>팝업제목</h2>
+            <p>팝업내용</p>
+            <button>닫기</button>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="inner">
+            <div class="left">
+                <h1><a href="#"><img src="./images/logo.png" alt="대한투어로고"></a></h1>
+            </div>
+            <div class="right">
+                <nav id="nav">
+                    <div class="header-bg"></div>
+                    <ul>
+                        <li>
+                            <a href="#" class="main-btn" title="해외여행">해외여행</a>
+                            <ul class="sub">
+                                <li><a href="#" title="동남아/대만">동남아/대만</a></li>
+                                <li><a href="#" title="중국/홍콩">중국/홍콩</a></li>
+                                <li><a href="#" title="유럽/두바이">유럽/두바이</a></li>
+                                <li><a href="#" title="미주/하와이">미주/하와이</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-btn" title="국내여행">국내여행</a>
+                            <ul class="sub">
+                                <li><a href="#" title="서울/경기권">서울/경기권</a></li>
+                                <li><a href="#" title="충청권">충청권</a></li>
+                                <li><a href="#" title="전라권">전라권</a></li>
+                                <li><a href="#" title="경상/강원권">경상/강원권</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-btn" title="제주도">제주도</a>
+                            <ul class="sub">
+                                <li><a href="#" title="버스여행">버스여행</a></li>
+                                <li><a href="#" title="자유여행">자유여행</a></li>
+                                <li><a href="#" title="호텔/펜션">호텔/펜션</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-btn" title="렌터카">렌터카</a>
+                            <ul class="sub">
+                                <li><a href="#" title="국내 랜터카">국내 랜터카</a></li>
+                                <li><a href="#" title="국외 랜터카">국외 랜터카</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="slide-container">
+            <div class="slide-view">
+                <ul class="slide-wrap">
+                    <li class="slide slide1"><a href="#"><img src="./images/slide1.png" alt="슬라이드1"></a></li>
+                    <li class="slide slide2"><a href="#"><img src="./images/slide2.png" alt="슬라이드2"></a></li>
+                    <li class="slide slide3"><a href="#"><img src="./images/slide3.png" alt="슬라이드3"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="notice">
+                <h3>공지사항</h3>
+                <ul>
+                    <li><a href="#">공지사항1공지사항1공지사항1공지사항1공지사항1</a><span>공지사항날짜</span></li>
+                    <li><a href="#">공지사항2공지사항2공지사항2공지사항2공지사항2</a><span>공지사항날짜</span></li>
+                    <li><a href="#">공지사항3공지사항3공지사항3공지사항3공지사항3</a><span>공지사항날짜</span></li>
+                    <li><a href="#">공지사항4공지사항4공지사항4공지사항4공지사항4</a><span>공지사항날짜</span></li>
+                </ul>
+            </div>
+
+            <div class="gallery">
+                <h3>갤러리</h3>
+                <ul>
+                    <li><a href="#"><img src="./images/gal1.png" alt="갤러리이미지1"></a></li>
+                    <li><a href="#"><img src="./images/gal2.png" alt="갤러리이미지2"></a></li>
+                    <li><a href="#"><img src="./images/gal3.png" alt="갤러리이미지3"></a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <a href="#">
+                    <h2>바로가기</h2>
+                    <img src="./images/link.png" alt="바로가기링크">
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="left">
+                <p>Copyright All right reserved 대한투어</p>
+            </div>
+            <div class="right">
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="./images/facebook.png" alt="페이스북이미지"></a></li>
+                        <li><a href="#"><img src="./images/twitter.png" alt="트위터이미지"></a></li>
+                        <li><a href="#"><img src="./images/blog.png" alt="블로그이미지"></a></li>
+                    </ul>
+                </div>
+                <div class="f_fam">
+                    <select class="f_familly">
+                        <option id="fam1">패밀리 사이트</option>
+                        <option id="fam2">네이버</option>
+                        <option id="fam3">다음</option>
+                        <option id="fam4">네이트</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
