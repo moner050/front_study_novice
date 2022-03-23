@@ -6,6 +6,7 @@
         {
             this.header();
             this.slide();
+            this.tapMenu();
             this.popUp();
         },
         header: function()
@@ -47,6 +48,22 @@
                 })
             }, 3000);
         },
+        tapMenu: function()
+        {
+            $('.tap-menu li').on({
+                click: function()
+                {
+                    var idx = $(this).index();
+
+                    $('.tap-item > *').hide().removeClass('on');
+                    $('.tap-item > *').eq(idx).show().addClass('on');
+
+                    $('.tap-menu li').removeClass('on');
+                    $(this).addClass('on');
+
+                }
+            });
+        },
         popUp: function()
         {   
             $('.notice li:nth-child(1)').on({
@@ -60,7 +77,7 @@
                 {
                     $('.popUpBox').hide();
                 }
-            })
+            });
         }
 
     }
