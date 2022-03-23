@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* 초기화 */
+*{padding: 0; border: 0; margin: 0; vertical-align: middle; box-sizing: border-box; color: #333333; font-style: normal;}
+ol, ul, li {list-style: none;}
+a {text-decoration: none;}
+img {vertical-align: top;}
+/* 스킵 */
+#skip {width: 100%; position: fixed; top: 0; left: 0; z-index: 999;}
+#skip li {width: 100%;}
+#skip li a {display: block; width: 100%; text-align: center; background: #000; color: #ffffff; line-height: 0; font-size: 0;}
+#skip li a:focus {font-size: 20px; line-height: 50px;}
+/* 팝업 */
+.popUpBox {position: absolute; z-index: 1000; width: 100%; height: 100%; display: none;}
+.popUpBox .popUp {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -100%); width: 600px; padding: 20px; background: #ffffff; border: 1px solid #000; text-align: center;}
+.popUpBox .popUp p {font-size: 15px; margin: 10px 0 0 0;}
+.popUpBox .popUp button {float: right; padding: 4px; cursor: pointer;}
+/* 헤더 */
+#header {width: 100%; height: 100px; background: #a2e7ea; position: relative; z-index: 998;}
+#header .inner {width: 1200px; height: 100px; margin: 0 auto; position: relative;}
+/* 헤더 좌측 로고 */
+#header .inner .left {width: 200px; height: 100px; float: left;}
+#header .inner .left h1 a {width: 200px; height: 100px; line-height: 50px; position: fixed;}
+/* 헤더 우측 메인메뉴 */
+#header .inner .header-bg {position: absolute; z-index: 996; top: 75px; left: 500px; width: 675px; height: 200px; background: #ffffff; display: none;}
+#header .inner .right {position: relative; z-index: 997; width: 1000px; height: 100px; float: left;}
+#header .inner .right #nav {width: 700px; height: 100px; float: right; padding: 25px 25px 25px 0;}
+#header .inner .right #nav > ul {width: 100%;}
+#header .inner .right #nav > ul > li {float: left; width: 25%; text-align: center;}
+#header .inner .right #nav > ul > li:hover > a {color: #ffffff; background: #1673be;}
+#header .inner .right #nav > ul > li > a {display: block; font-size: 22px; font-weight: 600; line-height: 50px; background: #ffffff;}
+/* 헤더 우측 서브메뉴 */
+#header .inner .right #nav > ul > li > .sub {width: 100%; display: none;}
+#header .inner .right #nav > ul > li > .sub li {width: 100%;}
+#header .inner .right #nav > ul > li > .sub li a {display: block; line-height: 50px; font-size: 18px;}
+#header .inner .right #nav > ul > li > .sub li a:hover {background: #2d89d4; color: #ffffff;}
+
+/* 메인 */
+#main {width: 1200px; height: 500px; position: relative; margin: 0 auto;}
+/* 슬라이드 */
+#main .slide-container {width: 1200px; height: 300px;}
+#main .slide-container .slide-view {width: 1200px; overflow: hidden;}
+#main .slide-container .slide-view .slide-wrap {width: 1200px; height: 300px; display: flex;}
+#main .slide-container .slide-view .slide-wrap li a {width: 100%; height: 100%;}
+#main .slide-container .slide-view .slide-wrap li a img {width: 1200px; height: 300px;}
+/* 컨텐츠 */
+#main .content {width: 1200px; height: 200px; display: flex;}
+/* 탭메뉴 */
+#main .content .tap {width: 400px; height: 200px;}
+#main .content .tap .tap-menu li {display: inline-block; font-size: 18px;  padding: 10px;}
+#main .content .tap .tap-menu li a {display: block;}
+#main .content .tap .tap-menu li.on {background: #a2e7ea;}
+/* 탭 아이템 */
+#main .content .tap .tap-item > * {height: 158px; padding: 10px;}
+#main .content .tap .tap-item > *.on {background: #a2e7ea;}
+/* 공지사항 */
+#main .content .tap .tap-item .notice ul li {display: flex; line-height: 2.2em;}
+#main .content .tap .tap-item .notice ul li:hover {text-decoration: underline;}
+#main .content .tap .tap-item .notice ul li a {width: 262px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+/* 갤러리 */
+#main .content .tap .tap-item .gallery {display: none;}
+#main .content .tap .tap-item .gallery li {display: inline-block; width: 32%; margin: 8px 0 0 0;}
+#main .content .tap .tap-item .gallery li a img {width: 100%;}
+/* 배너, 링크*/
+#main .content .banner, .link {width: 400px; height: 200px; position: relative;}
+#main .content .banner a h2, .link a h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #ffffff; padding: 3px 5px;}
+
+/* 푸터 */
+#footer {background: #a2e7ea; width: 100%; height: 100px;}
+#footer .inner {width: 1200px; height: 100px; margin: 0 auto; display: flex;}
+/* 푸터 좌측 로고 */
+#footer .inner .left {width: 200px; height: 100px;}
+#footer .inner .left h1 a {display: block; width: 100%; height: 100%; line-height: 50px;}
+/* 푸터 우측 메뉴 및 저작권 */
+#footer .inner .right {width: 1000px; height: 100px;}
+#footer .inner .right .menu {width: 100%; height: 50px; display: flex;}
+#footer .inner .right .menu li {width: 33.33%; height: 100%; text-align: center;}
+#footer .inner .right .menu li a {line-height: 50px;}
+#footer .inner .right p {text-align: center; line-height: 50px;}
