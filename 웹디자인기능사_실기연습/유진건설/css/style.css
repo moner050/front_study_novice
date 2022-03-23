@@ -31,8 +31,8 @@ img {vertical-align: top;}
 #wrap #header .right #nav {float: right; width: 700px; padding: 50px 25px;}
 #wrap #header .right #nav > ul {width: 100%;}
 #wrap #header .right #nav > ul > li {float: left; width: 25%;}
+#wrap #header .right #nav > ul > li:hover > a {color: #ffffff; background: #1fad2f;}
 #wrap #header .right #nav > ul > li > a {display: block; line-height: 50px; text-align: center; color: #333333; background: #ffffff; font-size: 18px;}
-#wrap #header .right #nav > ul > li > a:hover {color: #ffffff; background: #1fad2f;}
 /* 헤더 서브 메뉴 */
 #wrap #header .right #nav > ul > li > .sub {width: 100%; display: none;}
 #wrap #header .right #nav > ul > li > .sub > li {width: 100%; text-align: center;}
