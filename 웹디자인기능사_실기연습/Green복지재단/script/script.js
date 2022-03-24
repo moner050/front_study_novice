@@ -30,25 +30,16 @@
         },
         mainSlide: function()
         {
-            var cnt = 0;
             var slideWrap = $('.slide-wrap');
 
-            function mainSlide()
+            setInterval(function()
             {
-                slideWrap.stop().animate({left: -1200*cnt}, 800, function()
+                slideWrap.stop().animate({'margin-left' : '-1200px'}, 800, function()
                 {
-                    if(cnt > 2){cnt = 0}
-                    slideWrap.stop().animate({left: -1200*cnt}, 0);
-                });
-            }
-
-            function nextCount()
-            {
-                cnt++;
-                mainSlide();
-            }
-
-            setInterval(nextCount, 3000);
+                    $('.slide:first').appendTo(slideWrap);
+                    slideWrap.css({'margin-left' : '0'});
+                })
+            }, 3000)
         },
         popup: function()
         {
