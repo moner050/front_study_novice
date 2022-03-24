@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {border: 0; padding: 0; margin: 0; box-sizing: border-box; color: #333333;}
+ol, ul, li {list-style: none;}
+a {text-decoration: none;}
+img {vertical-align: top;}
+/* 스킵 */
+#skip {position: fixed; top: 0; left: 0; z-index: 999; width: 100%;}
+#skip li {width: 100%; text-align: center;}
+#skip li a {display: block; line-height: 0; font-size: 0; color: #ffffff; background: #000;}
+#skip li a:focus {line-height: 50px; font-size: 20px;}
+/* 팝업 */
+.popUpBox {position: absolute; z-index: 1000; width: 1000px; height: 650px; display: none;}
+.popUpBox .popUp {position: absolute; left: 50%; top: 50%; width: 500px; transform: translate(-50% ,-50%); padding: 20px; text-align: center; border: 1px solid #000;  background: #ffffff;}
+.popUpBox .popUp p {margin: 10px 0 0 0;}
+.popUpBox .popUp button {float: right; padding: 5px 10px; cursor: pointer; border: 1px solid #999999;}
+/* 전체 */
+#wrap { width: 1000px; height: 650px; display: flex;}
+/* 헤더 */
+#wrap #header {width: 200px; height: 650px; float: left; position: relative; z-index: 998; background: #a7ffba;}
+/* 헤더 로고 */
+#wrap #header h1 {width: 200px; font-size: 0;}
+#wrap #header h1 a {display: block; margin: 30px 0;}
+#wrap #header h1 a img {width: 100%;}
+/* 헤더 메인 메뉴 */
+#wrap #header #nav {width: 100%; width: 180px; padding: 80px 0 0 20px;}
+#wrap #header #nav ul .main-menu {position: relative; border-bottom: 1px solid #005612;}
+#wrap #header #nav ul .main-menu > a { background: #e2ffe8;}
+#wrap #header #nav ul .main-menu:nth-child(1) {border-top: 1px solid #005612;}
+#wrap #header #nav ul .main-menu a {display: block; text-align: center; font-size: 17.5px; font-weight: 600; padding: 10px 0;}
+#wrap #header #nav ul .main-menu:hover > a {color: #ffffff; background: #009c21;}
+/* 헤더 서브 메뉴 */
+#wrap #header #nav ul .main-menu .sub {position: absolute; top: -24px; left: 160px; width: 100%; z-index: 997; display: none;} 
+#wrap #header #nav ul .main-menu .sub a {display: block; font-size: 16.5px; background: #c4ffd1;}
+#wrap #header #nav ul .main-menu .sub a:hover {color: #ffffff; background: #00b627;}
+
+/* 메인 */
+#wrap #main {width: 800px; height: 550px; display: block; position: absolute; top: 0; left: 200px;}
+/* 메인 슬라이드 */
+#wrap #main .slide-container {position: relative; width: 800px; height: 350px;}
+#wrap #main .slide-container .slide-view {width: 800px;  overflow: hidden;}
+#wrap #main .slide-container .slide-view .slide-wrap {width: 300%; display: flex;}
+#wrap #main .slide-container .slide-view .slide-wrap .slide {position: relative; float: left;}
+/* 메인 컨텐츠 */
+#wrap #main .content {width: 800px; height: 200px; display: flex;}
+/* 공지사항 */
+#wrap #main .content .notice {width: 275px; height: 200px;}
+#wrap #main .content .notice h2 {display: inline-block; font-size: 17px; font-weight: 600; padding: 10px;}
+#wrap #main .content .notice ul li {display: flex; line-height: 2.2em; padding: 0 0 0 10px;}
+#wrap #main .content .notice ul li a {width: 160px; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+#wrap #main .content .notice ul li:hover {text-decoration: underline;}
+#wrap #main .content .notice ul li span {margin: 0 auto;}
+/* 갤러리 */
+#wrap #main .content .gallery {width: 275px; height: 200px;}
+#wrap #main .content .gallery h2 {display: inline-block; font-size: 17px; font-weight: 600; padding: 10px;}
+#wrap #main .content .gallery ul {padding: 30px 5px;}
+#wrap #main .content .gallery ul li {display: inline-block; width: 31.5%; padding-left: 10px;}
+#wrap #main .content .gallery ul li a img {width: 90%;}
+/* 배너 */
+#wrap #main .content .banner {width: 250; height: 200px; position: relative;}
+#wrap #main .content .banner h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 5px 8px; background: #ffffff;}
+
+/* 푸터 */
+#wrap #footer {width: 800px; height: 100px; position: absolute; top: 550px; left: 200px; display: flex;}
+#wrap #footer .left {width: 200px; height: 100px;}
+#wrap #footer .left a {display: block; padding: 20px 10px 0 0;}
+#wrap #footer .right {width: 600px; height: 100px;}
+#wrap #footer .right .menu ul li {display:inline-block; line-height: 50px; padding: 0 40px;}
+#wrap #footer .right p {text-align: center; line-height: 50px;}
+
+
+
