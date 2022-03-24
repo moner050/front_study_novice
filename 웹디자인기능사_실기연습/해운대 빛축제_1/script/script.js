@@ -44,9 +44,9 @@
 
             function mainSlide()
             {
-                $('.slide').css({zIndex:1}).animate({opacity:1}, 0);
+                $('.slide').css({zIndex:1}).stop().animate({opacity:1}, 0);
                 $('.slide').eq(cnt==n?0:cnt+1).css({zIndex:2});
-                $('.slide').eq(cnt).css({zIndex:3}).animate({opacity:0}, 1000);
+                $('.slide').eq(cnt).css({zIndex:3}).stop().animate({opacity:0}, 1000);
             }
 
             function nextCount()
