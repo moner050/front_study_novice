@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {margin: 0; border: 0; padding: 0; color: #333333;}
+ol,ul,li {list-style: none;}
+a {text-decoration: none;}
+img {vertical-align: top;}
+
+/* 스킵 */
+#skip {width: 100%; position: fixed; z-index: 99; top: 0;}
+#skip li {width: 100%; text-align: center;}
+#skip li a {display: block; font-size: 0; line-height: 0; color: #ffffff; background: #000;}
+#skip li a:focus {font-size: 20px; line-height: 50px;}
+
+/* 팝업 */
+#popUpBox {width: 1000px; height: 650px; position: absolute; z-index: 98; display: none;}
+#popUpBox .popUp {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 400px; background: #ffffff; padding: 20px; text-align: center; border: 1px solid #000;}
+#popUpBox .popUp p {margin: 8px 0 0 0;}
+#popUpBox .popUp button {float: right; border: 1px solid #999999; padding: 4px 10px; cursor: pointer;}
+
+/* 전체 */
+#wrap {width: 1000px; height: 650px; display: flex;}
+/* 헤더 */
+#wrap #header {width: 200px; height: 650px; background: #ffd9d9; position: relative; z-index: 97; float: left;}
+/* 헤더 로고 */
+#wrap #header h1 {font-size: 0; padding: 30px 0;}
+#wrap #header h1 a img {padding: 0 0 0 5px;}
+/* 헤더 메인메뉴 */
+#wrap #header #nav {width: 180px; padding: 10px 0 0 10px;}
+#wrap #header #nav ul .main-menu {position: relative; border-bottom: 1px solid #ff0040;}
+#wrap #header #nav ul .main-menu:nth-child(1) { border-top: 1px solid #ff0040;}
+#wrap #header #nav ul .main-menu a {display: block; width: 180px; padding: 10px; font-weight: 600;  text-align: center; padding: 10px 0;}
+#wrap #header #nav ul .main-menu:hover > a {color: #ffdada; background: #ff2057;}
+#wrap #header #nav ul .main-menu > a {font-size: 18px; background: #ffe6e6;}
+/* 헤더 서브메뉴 */
+#wrap #header #nav ul .main-menu .sub {position: absolute; top: -24px; left: 180px; background: #ffdada; display: none;}
+#wrap #header #nav ul .main-menu .sub li:hover > a {color: #fefefe; background: #ffa5a5;}
+
+/* 메인 */
+#wrap #main {width: 800px; height: 550px;}
+/* 메인 슬라이드 */
+#wrap #main .slide-container {position: relative; width: 800px; height: 350px;}
+#wrap #main .slide-container .slide-view {width: 800px; overflow: hidden;}
+#wrap #main .slide-container .slide-view .slide-wrap {width: 300%; display: flex;}
+#wrap #main .slide-container .slide-view .slide-wrap .slide {position: relative; float: left;}
+/* 메인 컨텐츠 */
+#wrap #main .content {width: 800px; height: 200px; display: flex;}
+/* 공지사항 */
+#wrap #main .content .notice {width: 275px;}
+#wrap #main .content .notice h2, .gallery h2 {display: inline-block; padding: 5px 10px;}
+#wrap #main .content .notice ul li {display: flex;  line-height: 2.2em; font-size: 16px;}
+#wrap #main .content .notice ul li:hover {text-decoration: underline;}
+#wrap #main .content .notice ul li a {display: block; width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 0 0 10px;}
+#wrap #main .content .notice ul li span {margin: 0 auto;}
+/* 갤러리 */
+#wrap #main .content .gallery {width: 275px;}
+#wrap #main .content .gallery ul {display: flex; margin: 15px 0 0 0;}
+#wrap #main .content .gallery ul li {padding: 3px;}
+#wrap #main .content .gallery ul li a {display: block;}
+#wrap #main .content .gallery ul li a img {width: 95%;}
+/* 바로가기 */
+#wrap #main .content .link {width: 250px; position: relative;}
+#wrap #main .content .link h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#wrap #main .content .link a img {width: 100%;}
+
+/* 푸터 */
+#wrap #footer {width: 800px; height: 100px; position: absolute; top: 550px; left: 200px; display: flex;}
+#wrap #footer h1, #wrap #footer .f_fam {width: 150px; height: 100px;}
+#wrap #footer h1 a {display: block; padding: 0 0 0 20px;}
+#wrap #footer p {width: 500px; height: 100px; line-height: 100px; text-align: center;}
+#wrap #footer .f_fam .f_familly {border: 1px solid #999999; margin: 40px 0 0 0;}
+
