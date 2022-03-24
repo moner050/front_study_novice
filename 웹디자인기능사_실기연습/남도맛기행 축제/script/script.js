@@ -13,10 +13,18 @@
                 mouseenter: function()
                 {
                     $(this).find('.sub').stop().fadeIn(100);
+                },
+                focusin: function()
+                {
+                    $(this).find('.sub').stop().fadeIn(100);
                 }
             });
             $('.main-menu').on({
                 mouseleave: function()
+                {
+                    $(this).find('.sub').stop().fadeOut(100);
+                },
+                focusout: function()
                 {
                     $(this).find('.sub').stop().fadeOut(100);
                 }
